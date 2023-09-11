@@ -1,0 +1,25 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Users/Jonathan/Documents/steel_spx/steel_spx/steel_spx.srcs/sources_1/new/haraka_core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module haraka_core
+INFO: [VRFC 10-311] analyzing module sub_bytes
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Users/Jonathan/Documents/steel_spx/steel_spx/steel_spx.srcs/sources_1/new/module_haraka.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_haraka
+INFO: [VRFC 10-311] analyzing module mix256
+INFO: [VRFC 10-311] analyzing module mix512
+INFO: [VRFC 10-311] analyzing module f_forward
+INFO: [VRFC 10-311] analyzing module f_forward_512
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Users/Jonathan/Documents/steel_spx/steel_spx/steel_spx.srcs/sources_1/new/riscv_steel_core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_steel_core
+INFO: [VRFC 10-311] analyzing module rv32i_alu
+INFO: [VRFC 10-311] analyzing module branch_decision
+INFO: [VRFC 10-311] analyzing module imm_generator
+INFO: [VRFC 10-311] analyzing module data_fetch_store_unit
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-311] analyzing module load_unit
+INFO: [VRFC 10-311] analyzing module csr_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Users/Jonathan/Documents/steel_spx/steel_spx/steel_spx.srcs/sources_1/new/steel_spx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module steel_spx
+INFO: [VRFC 10-311] analyzing module memory_mapper
+INFO: [VRFC 10-311] analyzing module dual_port_ram
+INFO: [VRFC 10-311] analyzing module uart
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Users/Jonathan/Documents/steel_spx/steel_spx/steel_spx.srcs/sources_1/new/test_spx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_spx

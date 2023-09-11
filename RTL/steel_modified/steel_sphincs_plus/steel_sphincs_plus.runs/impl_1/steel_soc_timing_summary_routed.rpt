@@ -1,0 +1,964 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Wed Jul  5 18:40:16 2023
+| Host         : jvaldivieso running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -report_unconstrained -file steel_soc_timing_summary_routed.rpt -pb steel_soc_timing_summary_routed.pb -rpx steel_soc_timing_summary_routed.rpx -warn_on_violation
+| Design       : steel_soc
+| Device       : 7s50-csga324
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+Rule       Severity          Description                  Violations  
+---------  ----------------  ---------------------------  ----------  
+TIMING-17  Critical Warning  Non-clocked sequential cell  1000        
+
+Note: This report is based on the most recent report_methodology run and may not be up-to-date. Run report_methodology on the current design for the latest report.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (3166)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (6568)
+5. checking no_input_delay (2)
+6. checking no_output_delay (1)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (3166)
+---------------------------
+ There are 3166 register/latch pins with no clock driven by root clock pin: clk50mhz_reg/Q (HIGH)
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (6568)
+---------------------------------------------------
+ There are 6568 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (2)
+------------------------------
+ There are 2 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (1)
+-------------------------------
+ There is 1 port with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      8.661        0.000                      0                    1        0.380        0.000                      0                    1        4.500        0.000                       0                     2  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock        Waveform(ns)       Period(ns)      Frequency(MHz)
+-----        ------------       ----------      --------------
+sys_clk_pin  {0.000 5.000}      10.000          100.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+sys_clk_pin         8.661        0.000                      0                    1        0.380        0.000                      0                    1        4.500        0.000                       0                     2  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+(none)                                    
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  sys_clk_pin
+  To Clock:  sys_clk_pin
+
+Setup :            0  Failing Endpoints,  Worst Slack        8.661ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.380ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        4.500ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             8.661ns  (required time - arrival time)
+  Source:                 clk50mhz_reg/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            clk50mhz_reg/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        1.333ns  (logic 0.580ns (43.520%)  route 0.753ns (56.480%))
+  Logic Levels:           1  (LUT1=1)
+  Clock Path Skew:        0.000ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.213ns = ( 14.213 - 10.000 ) 
+    Source Clock Delay      (SCD):    4.482ns
+    Clock Pessimism Removal (CPR):    0.270ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    R2                                                0.000     0.000 r  clock (IN)
+                         net (fo=0)                   0.000     0.000    clock
+    R2                   IBUF (Prop_ibuf_I_O)         0.854     0.854 r  clock_IBUF_inst/O
+                         net (fo=1, routed)           1.967     2.821    clock_IBUF
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.096     2.917 r  clock_IBUF_BUFG_inst/O
+                         net (fo=1, routed)           1.565     4.482    clock_IBUF_BUFG
+    SLICE_X36Y46         FDRE                                         r  clk50mhz_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X36Y46         FDRE (Prop_fdre_C_Q)         0.456     4.938 f  clk50mhz_reg/Q
+                         net (fo=2, routed)           0.753     5.691    clk50mhz
+    SLICE_X36Y46         LUT1 (Prop_lut1_I0_O)        0.124     5.815 r  clk50mhz_i_1/O
+                         net (fo=1, routed)           0.000     5.815    clk50mhz_i_1_n_0
+    SLICE_X36Y46         FDRE                                         r  clk50mhz_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    R2                                                0.000    10.000 r  clock (IN)
+                         net (fo=0)                   0.000    10.000    clock
+    R2                   IBUF (Prop_ibuf_I_O)         0.814    10.814 r  clock_IBUF_inst/O
+                         net (fo=1, routed)           1.862    12.676    clock_IBUF
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.091    12.767 r  clock_IBUF_BUFG_inst/O
+                         net (fo=1, routed)           1.445    14.213    clock_IBUF_BUFG
+    SLICE_X36Y46         FDRE                                         r  clk50mhz_reg/C
+                         clock pessimism              0.270    14.482    
+                         clock uncertainty           -0.035    14.447    
+    SLICE_X36Y46         FDRE (Setup_fdre_C_D)        0.029    14.476    clk50mhz_reg
+  -------------------------------------------------------------------
+                         required time                         14.476    
+                         arrival time                          -5.815    
+  -------------------------------------------------------------------
+                         slack                                  8.661    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.380ns  (arrival time - required time)
+  Source:                 clk50mhz_reg/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            clk50mhz_reg/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.471ns  (logic 0.186ns (39.514%)  route 0.285ns (60.486%))
+  Logic Levels:           1  (LUT1=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.895ns
+    Source Clock Delay      (SCD):    1.539ns
+    Clock Pessimism Removal (CPR):    0.356ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    R2                                                0.000     0.000 r  clock (IN)
+                         net (fo=0)                   0.000     0.000    clock
+    R2                   IBUF (Prop_ibuf_I_O)         0.320     0.320 r  clock_IBUF_inst/O
+                         net (fo=1, routed)           0.631     0.951    clock_IBUF
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.026     0.977 r  clock_IBUF_BUFG_inst/O
+                         net (fo=1, routed)           0.563     1.539    clock_IBUF_BUFG
+    SLICE_X36Y46         FDRE                                         r  clk50mhz_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X36Y46         FDRE (Prop_fdre_C_Q)         0.141     1.680 f  clk50mhz_reg/Q
+                         net (fo=2, routed)           0.285     1.965    clk50mhz
+    SLICE_X36Y46         LUT1 (Prop_lut1_I0_O)        0.045     2.010 r  clk50mhz_i_1/O
+                         net (fo=1, routed)           0.000     2.010    clk50mhz_i_1_n_0
+    SLICE_X36Y46         FDRE                                         r  clk50mhz_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    R2                                                0.000     0.000 r  clock (IN)
+                         net (fo=0)                   0.000     0.000    clock
+    R2                   IBUF (Prop_ibuf_I_O)         0.350     0.350 r  clock_IBUF_inst/O
+                         net (fo=1, routed)           0.685     1.035    clock_IBUF
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.029     1.064 r  clock_IBUF_BUFG_inst/O
+                         net (fo=1, routed)           0.832     1.895    clock_IBUF_BUFG
+    SLICE_X36Y46         FDRE                                         r  clk50mhz_reg/C
+                         clock pessimism             -0.356     1.539    
+    SLICE_X36Y46         FDRE (Hold_fdre_C_D)         0.091     1.630    clk50mhz_reg
+  -------------------------------------------------------------------
+                         required time                         -1.630    
+                         arrival time                           2.010    
+  -------------------------------------------------------------------
+                         slack                                  0.380    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         sys_clk_pin
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { clock }
+
+Check Type        Corner  Lib Pin  Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location       Pin
+Min Period        n/a     BUFG/I   n/a            2.155         10.000      7.845      BUFGCTRL_X0Y1  clock_IBUF_BUFG_inst/I
+Min Period        n/a     FDRE/C   n/a            1.000         10.000      9.000      SLICE_X36Y46   clk50mhz_reg/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X36Y46   clk50mhz_reg/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X36Y46   clk50mhz_reg/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X36Y46   clk50mhz_reg/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X36Y46   clk50mhz_reg/C
+
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  
+
+Max Delay          6569 Endpoints
+Min Delay          6569 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 dual_port_ram_instance/ram_reg/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E1)
+  Destination:            riscv_steel_core_instance/register_file_instance/genblk2[4].Q_fp_reg[4][27]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        39.003ns  (logic 4.578ns (11.738%)  route 34.425ns (88.262%))
+  Logic Levels:           12  (LUT2=1 LUT3=2 LUT5=2 LUT6=5 MUXF7=1 RAMB36E1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y9          RAMB36E1                     0.000     0.000 r  dual_port_ram_instance/ram_reg/CLKBWRCLK
+    RAMB36_X0Y9          RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_DOBDO[20])
+                                                      2.454     2.454 r  dual_port_ram_instance/ram_reg/DOBDO[20]
+                         net (fo=1, routed)           1.313     3.767    riscv_steel_core_instance/csr_file_instance/DOBDO[20]
+    SLICE_X14Y45         LUT5 (Prop_lut5_I0_O)        0.124     3.891 r  riscv_steel_core_instance/csr_file_instance/instruction_csr_address_stage3[0]_i_1/O
+                         net (fo=2762, routed)       14.550    18.441    riscv_steel_core_instance/csr_file_instance/ram_reg_14[0]
+    SLICE_X57Y105        LUT2 (Prop_lut2_I0_O)        0.124    18.565 r  riscv_steel_core_instance/csr_file_instance/g0_b0__31_i_15/O
+                         net (fo=256, routed)         8.719    27.284    riscv_steel_core_instance/csr_file_instance/hashes_instance/haraka_core_intance/p_1_in[1]
+    SLICE_X14Y96         LUT6 (Prop_lut6_I3_O)        0.124    27.408 r  riscv_steel_core_instance/csr_file_instance/g0_b0__32_i_8/O
+                         net (fo=3, routed)           1.742    29.150    riscv_steel_core_instance/csr_file_instance/hashes_instance/haraka_core_intance/haraka_round_inst/p_0_in[9]
+    SLICE_X53Y97         LUT3 (Prop_lut3_I1_O)        0.154    29.304 r  riscv_steel_core_instance/csr_file_instance/g0_b0__32_i_2/O
+                         net (fo=32, routed)          1.594    30.898    riscv_steel_core_instance/csr_file_instance/g0_b0__32_i_2_n_0
+    SLICE_X52Y103        LUT6 (Prop_lut6_I1_O)        0.327    31.225 r  riscv_steel_core_instance/csr_file_instance/g1_b3__32/O
+                         net (fo=1, routed)           0.000    31.225    riscv_steel_core_instance/hashes_instance/haraka_core_intance/haraka_round_inst/sbytes_inst/genblk2[2].Q_fp[2][20]_i_8_0
+    SLICE_X52Y103        MUXF7 (Prop_muxf7_I1_O)      0.247    31.472 r  riscv_steel_core_instance/hashes_instance/haraka_core_intance/haraka_round_inst/sbytes_inst/sbox_inferred__0/genblk2[2].Q_fp_reg[2][27]_i_25/O
+                         net (fo=3, routed)           0.718    32.191    riscv_steel_core_instance/csr_file_instance/genblk2[2].Q_fp[2][12]_i_5_4
+    SLICE_X52Y105        LUT6 (Prop_lut6_I3_O)        0.298    32.489 r  riscv_steel_core_instance/csr_file_instance/genblk2[2].Q_fp[2][27]_i_11/O
+                         net (fo=2, routed)           0.999    33.488    riscv_steel_core_instance/csr_file_instance/genblk2[2].Q_fp[2][27]_i_11_n_0
+    SLICE_X55Y106        LUT6 (Prop_lut6_I1_O)        0.124    33.612 r  riscv_steel_core_instance/csr_file_instance/genblk2[2].Q_fp[2][27]_i_5/O
+                         net (fo=4, routed)           1.460    35.072    riscv_steel_core_instance/csr_file_instance/hashes_instance/haraka_core_intance/haraka_round_inst/new_block_10476_out[3]
+    SLICE_X45Y98         LUT3 (Prop_lut3_I1_O)        0.152    35.224 r  riscv_steel_core_instance/csr_file_instance/genblk2[4].Q_fp[4][27]_i_6/O
+                         net (fo=2, routed)           1.558    36.782    riscv_steel_core_instance/csr_file_instance/hashes_instance/mix_1[91]
+    SLICE_X20Y103        LUT6 (Prop_lut6_I2_O)        0.326    37.108 r  riscv_steel_core_instance/csr_file_instance/genblk2[4].Q_fp[4][27]_i_3/O
+                         net (fo=1, routed)           1.771    38.879    riscv_steel_core_instance/csr_file_instance/new_block_2[155]
+    SLICE_X28Y85         LUT5 (Prop_lut5_I4_O)        0.124    39.003 r  riscv_steel_core_instance/csr_file_instance/genblk2[4].Q_fp[4][27]_i_1/O
+                         net (fo=1, routed)           0.000    39.003    riscv_steel_core_instance/register_file_instance/genblk2[4].Q_fp_reg[4][31]_2[27]
+    SLICE_X28Y85         FDRE                                         r  riscv_steel_core_instance/register_file_instance/genblk2[4].Q_fp_reg[4][27]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 dual_port_ram_instance/ram_reg/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E1)
+  Destination:            riscv_steel_core_instance/register_file_instance/genblk2[14].Q_fp_reg[14][20]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        38.969ns  (logic 4.528ns (11.620%)  route 34.441ns (88.380%))
+  Logic Levels:           12  (LUT2=1 LUT3=2 LUT5=3 LUT6=3 MUXF7=1 MUXF8=1 RAMB36E1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y9          RAMB36E1                     0.000     0.000 r  dual_port_ram_instance/ram_reg/CLKBWRCLK
+    RAMB36_X0Y9          RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_DOBDO[20])
+                                                      2.454     2.454 r  dual_port_ram_instance/ram_reg/DOBDO[20]
+                         net (fo=1, routed)           1.313     3.767    riscv_steel_core_instance/csr_file_instance/DOBDO[20]
+    SLICE_X14Y45         LUT5 (Prop_lut5_I0_O)        0.124     3.891 r  riscv_steel_core_instance/csr_file_instance/instruction_csr_address_stage3[0]_i_1/O
+                         net (fo=2762, routed)       14.550    18.441    riscv_steel_core_instance/csr_file_instance/ram_reg_14[0]
+    SLICE_X57Y105        LUT2 (Prop_lut2_I0_O)        0.124    18.565 r  riscv_steel_core_instance/csr_file_instance/g0_b0__31_i_15/O
+                         net (fo=256, routed)         8.903    27.468    riscv_steel_core_instance/csr_file_instance/hashes_instance/haraka_core_intance/p_1_in[1]
+    SLICE_X13Y96         LUT6 (Prop_lut6_I5_O)        0.124    27.592 r  riscv_steel_core_instance/csr_file_instance/g0_b0__31_i_8/O
+                         net (fo=3, routed)           2.205    29.796    riscv_steel_core_instance/csr_file_instance/hashes_instance/haraka_core_intance/haraka_round_inst/p_0_in[1]
+    SLICE_X52Y95         LUT3 (Prop_lut3_I1_O)        0.148    29.944 r  riscv_steel_core_instance/csr_file_instance/g0_b0__31_i_2/O
+                         net (fo=32, routed)          1.583    31.527    riscv_steel_core_instance/csr_file_instance/g0_b0__31_i_2_n_0
+    SLICE_X51Y99         LUT6 (Prop_lut6_I1_O)        0.328    31.855 r  riscv_steel_core_instance/csr_file_instance/g0_b4__31/O
+                         net (fo=1, routed)           0.000    31.855    riscv_steel_core_instance/hashes_instance/haraka_core_intance/haraka_round_inst/sbytes_inst/genblk2[3].Q_fp_reg[3][28]_i_7_0
+    SLICE_X51Y99         MUXF7 (Prop_muxf7_I0_O)      0.238    32.093 r  riscv_steel_core_instance/hashes_instance/haraka_core_intance/haraka_round_inst/sbytes_inst/genblk2[3].Q_fp_reg[3][28]_i_13/O
+                         net (fo=1, routed)           0.000    32.093    riscv_steel_core_instance/hashes_instance/haraka_core_intance/haraka_round_inst/sbytes_inst/genblk2[3].Q_fp_reg[3][28]_i_13_n_0
+    SLICE_X51Y99         MUXF8 (Prop_muxf8_I0_O)      0.104    32.197 r  riscv_steel_core_instance/hashes_instance/haraka_core_intance/haraka_round_inst/sbytes_inst/genblk2[3].Q_fp_reg[3][28]_i_7/O
+                         net (fo=5, routed)           1.160    33.357    riscv_steel_core_instance/csr_file_instance/new_b_wire[4]
+    SLICE_X41Y99         LUT6 (Prop_lut6_I2_O)        0.316    33.673 r  riscv_steel_core_instance/csr_file_instance/genblk2[3].Q_fp[3][20]_i_4/O
+                         net (fo=4, routed)           1.340    35.013    riscv_steel_core_instance/csr_file_instance/hashes_instance/haraka_core_intance/haraka_round_inst/new_block_10485_out[4]
+    SLICE_X32Y101        LUT3 (Prop_lut3_I1_O)        0.118    35.131 r  riscv_steel_core_instance/csr_file_instance/genblk2[8].Q_fp[8][20]_i_4/O
+                         net (fo=2, routed)           1.823    36.954    riscv_steel_core_instance/csr_file_instance/hashes_instance/mix_1[116]
+    SLICE_X18Y103        LUT5 (Prop_lut5_I2_O)        0.326    37.280 r  riscv_steel_core_instance/csr_file_instance/genblk2[14].Q_fp[14][20]_i_3/O
+                         net (fo=1, routed)           1.565    38.845    riscv_steel_core_instance/csr_file_instance/new_block_1[212]
+    SLICE_X14Y84         LUT5 (Prop_lut5_I4_O)        0.124    38.969 r  riscv_steel_core_instance/csr_file_instance/genblk2[14].Q_fp[14][20]_i_1/O
+                         net (fo=1, routed)           0.000    38.969    riscv_steel_core_instance/register_file_instance/genblk2[14].Q_fp_reg[14][31]_1[20]
+    SLICE_X14Y84         FDRE                                         r  riscv_steel_core_instance/register_file_instance/genblk2[14].Q_fp_reg[14][20]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 dual_port_ram_instance/ram_reg/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E1)
+  Destination:            riscv_steel_core_instance/register_file_instance/genblk2[12].Q_fp_reg[12][27]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        38.792ns  (logic 4.578ns (11.802%)  route 34.214ns (88.198%))
+  Logic Levels:           12  (LUT2=1 LUT3=2 LUT5=3 LUT6=4 MUXF7=1 RAMB36E1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y9          RAMB36E1                     0.000     0.000 r  dual_port_ram_instance/ram_reg/CLKBWRCLK
+    RAMB36_X0Y9          RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_DOBDO[20])
+                                                      2.454     2.454 r  dual_port_ram_instance/ram_reg/DOBDO[20]
+                         net (fo=1, routed)           1.313     3.767    riscv_steel_core_instance/csr_file_instance/DOBDO[20]
+    SLICE_X14Y45         LUT5 (Prop_lut5_I0_O)        0.124     3.891 r  riscv_steel_core_instance/csr_file_instance/instruction_csr_address_stage3[0]_i_1/O
+                         net (fo=2762, routed)       14.550    18.441    riscv_steel_core_instance/csr_file_instance/ram_reg_14[0]
+    SLICE_X57Y105        LUT2 (Prop_lut2_I0_O)        0.124    18.565 r  riscv_steel_core_instance/csr_file_instance/g0_b0__31_i_15/O
+                         net (fo=256, routed)         8.719    27.284    riscv_steel_core_instance/csr_file_instance/hashes_instance/haraka_core_intance/p_1_in[1]
+    SLICE_X14Y96         LUT6 (Prop_lut6_I3_O)        0.124    27.408 r  riscv_steel_core_instance/csr_file_instance/g0_b0__32_i_8/O
+                         net (fo=3, routed)           1.742    29.150    riscv_steel_core_instance/csr_file_instance/hashes_instance/haraka_core_intance/haraka_round_inst/p_0_in[9]
+    SLICE_X53Y97         LUT3 (Prop_lut3_I1_O)        0.154    29.304 r  riscv_steel_core_instance/csr_file_instance/g0_b0__32_i_2/O
+                         net (fo=32, routed)          1.594    30.898    riscv_steel_core_instance/csr_file_instance/g0_b0__32_i_2_n_0
+    SLICE_X52Y103        LUT6 (Prop_lut6_I1_O)        0.327    31.225 r  riscv_steel_core_instance/csr_file_instance/g1_b3__32/O
+                         net (fo=1, routed)           0.000    31.225    riscv_steel_core_instance/hashes_instance/haraka_core_intance/haraka_round_inst/sbytes_inst/genblk2[2].Q_fp[2][20]_i_8_0
+    SLICE_X52Y103        MUXF7 (Prop_muxf7_I1_O)      0.247    31.472 r  riscv_steel_core_instance/hashes_instance/haraka_core_intance/haraka_round_inst/sbytes_inst/sbox_inferred__0/genblk2[2].Q_fp_reg[2][27]_i_25/O
+                         net (fo=3, routed)           0.718    32.191    riscv_steel_core_instance/csr_file_instance/genblk2[2].Q_fp[2][12]_i_5_4
+    SLICE_X52Y105        LUT6 (Prop_lut6_I3_O)        0.298    32.489 r  riscv_steel_core_instance/csr_file_instance/genblk2[2].Q_fp[2][27]_i_11/O
+                         net (fo=2, routed)           0.999    33.488    riscv_steel_core_instance/csr_file_instance/genblk2[2].Q_fp[2][27]_i_11_n_0
+    SLICE_X55Y106        LUT6 (Prop_lut6_I1_O)        0.124    33.612 r  riscv_steel_core_instance/csr_file_instance/genblk2[2].Q_fp[2][27]_i_5/O
+                         net (fo=4, routed)           1.460    35.072    riscv_steel_core_instance/csr_file_instance/hashes_instance/haraka_core_intance/haraka_round_inst/new_block_10476_out[3]
+    SLICE_X45Y98         LUT3 (Prop_lut3_I1_O)        0.152    35.224 r  riscv_steel_core_instance/csr_file_instance/genblk2[4].Q_fp[4][27]_i_6/O
+                         net (fo=2, routed)           1.713    36.937    riscv_steel_core_instance/csr_file_instance/hashes_instance/mix_1[91]
+    SLICE_X18Y102        LUT5 (Prop_lut5_I2_O)        0.326    37.263 r  riscv_steel_core_instance/csr_file_instance/genblk2[12].Q_fp[12][27]_i_3/O
+                         net (fo=1, routed)           1.405    38.668    riscv_steel_core_instance/csr_file_instance/new_block_1[155]
+    SLICE_X14Y85         LUT5 (Prop_lut5_I4_O)        0.124    38.792 r  riscv_steel_core_instance/csr_file_instance/genblk2[12].Q_fp[12][27]_i_1/O
+                         net (fo=1, routed)           0.000    38.792    riscv_steel_core_instance/register_file_instance/genblk2[12].Q_fp_reg[12][31]_3[27]
+    SLICE_X14Y85         FDRE                                         r  riscv_steel_core_instance/register_file_instance/genblk2[12].Q_fp_reg[12][27]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 dual_port_ram_instance/ram_reg/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E1)
+  Destination:            riscv_steel_core_instance/register_file_instance/genblk2[12].Q_fp_reg[12][20]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        38.764ns  (logic 4.314ns (11.129%)  route 34.450ns (88.871%))
+  Logic Levels:           12  (LUT2=1 LUT3=2 LUT5=4 LUT6=3 MUXF7=1 RAMB36E1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y9          RAMB36E1                     0.000     0.000 r  dual_port_ram_instance/ram_reg/CLKBWRCLK
+    RAMB36_X0Y9          RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_DOBDO[20])
+                                                      2.454     2.454 r  dual_port_ram_instance/ram_reg/DOBDO[20]
+                         net (fo=1, routed)           1.313     3.767    riscv_steel_core_instance/csr_file_instance/DOBDO[20]
+    SLICE_X14Y45         LUT5 (Prop_lut5_I0_O)        0.124     3.891 r  riscv_steel_core_instance/csr_file_instance/instruction_csr_address_stage3[0]_i_1/O
+                         net (fo=2762, routed)       14.550    18.441    riscv_steel_core_instance/csr_file_instance/ram_reg_14[0]
+    SLICE_X57Y105        LUT2 (Prop_lut2_I0_O)        0.124    18.565 r  riscv_steel_core_instance/csr_file_instance/g0_b0__31_i_15/O
+                         net (fo=256, routed)         8.719    27.284    riscv_steel_core_instance/csr_file_instance/hashes_instance/haraka_core_intance/p_1_in[1]
+    SLICE_X14Y96         LUT6 (Prop_lut6_I3_O)        0.124    27.408 r  riscv_steel_core_instance/csr_file_instance/g0_b0__32_i_8/O
+                         net (fo=3, routed)           1.742    29.150    riscv_steel_core_instance/csr_file_instance/hashes_instance/haraka_core_intance/haraka_round_inst/p_0_in[9]
+    SLICE_X53Y97         LUT3 (Prop_lut3_I1_O)        0.154    29.304 r  riscv_steel_core_instance/csr_file_instance/g0_b0__32_i_2/O
+                         net (fo=32, routed)          1.821    31.125    riscv_steel_core_instance/csr_file_instance/g0_b0__32_i_2_n_0
+    SLICE_X51Y105        LUT6 (Prop_lut6_I1_O)        0.327    31.452 r  riscv_steel_core_instance/csr_file_instance/g2_b7__32/O
+                         net (fo=1, routed)           0.000    31.452    riscv_steel_core_instance/hashes_instance/haraka_core_intance/haraka_round_inst/sbytes_inst/genblk2[2].Q_fp[2][20]_i_8_5
+    SLICE_X51Y105        MUXF7 (Prop_muxf7_I0_O)      0.212    31.664 r  riscv_steel_core_instance/hashes_instance/haraka_core_intance/haraka_round_inst/sbytes_inst/sbox_inferred__0/genblk2[2].Q_fp_reg[2][31]_i_39/O
+                         net (fo=4, routed)           0.693    32.358    riscv_steel_core_instance/csr_file_instance/genblk2[2].Q_fp[2][12]_i_5_7
+    SLICE_X52Y105        LUT5 (Prop_lut5_I4_O)        0.299    32.657 r  riscv_steel_core_instance/csr_file_instance/genblk2[2].Q_fp[2][20]_i_8/O
+                         net (fo=2, routed)           0.681    33.338    riscv_steel_core_instance/csr_file_instance/hashes_instance/haraka_core_intance/haraka_round_inst/p_230_in[4]
+    SLICE_X52Y105        LUT6 (Prop_lut6_I4_O)        0.124    33.462 r  riscv_steel_core_instance/csr_file_instance/genblk2[2].Q_fp[2][20]_i_5/O
+                         net (fo=4, routed)           1.370    34.832    riscv_steel_core_instance/csr_file_instance/hashes_instance/haraka_core_intance/haraka_round_inst/new_block_10473_out[4]
+    SLICE_X57Y97         LUT3 (Prop_lut3_I1_O)        0.124    34.956 r  riscv_steel_core_instance/csr_file_instance/genblk2[4].Q_fp[4][20]_i_6/O
+                         net (fo=2, routed)           1.981    36.937    riscv_steel_core_instance/csr_file_instance/hashes_instance/mix_1[84]
+    SLICE_X30Y99         LUT5 (Prop_lut5_I2_O)        0.124    37.061 r  riscv_steel_core_instance/csr_file_instance/genblk2[12].Q_fp[12][20]_i_3/O
+                         net (fo=1, routed)           1.579    38.640    riscv_steel_core_instance/csr_file_instance/new_block_1[148]
+    SLICE_X28Y84         LUT5 (Prop_lut5_I4_O)        0.124    38.764 r  riscv_steel_core_instance/csr_file_instance/genblk2[12].Q_fp[12][20]_i_1/O
+                         net (fo=1, routed)           0.000    38.764    riscv_steel_core_instance/register_file_instance/genblk2[12].Q_fp_reg[12][31]_3[20]
+    SLICE_X28Y84         FDRE                                         r  riscv_steel_core_instance/register_file_instance/genblk2[12].Q_fp_reg[12][20]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 dual_port_ram_instance/ram_reg/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E1)
+  Destination:            riscv_steel_core_instance/register_file_instance/genblk2[14].Q_fp_reg[14][13]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        38.670ns  (logic 4.724ns (12.216%)  route 33.946ns (87.784%))
+  Logic Levels:           13  (LUT2=1 LUT3=2 LUT5=2 LUT6=4 MUXF7=2 MUXF8=1 RAMB36E1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y9          RAMB36E1                     0.000     0.000 r  dual_port_ram_instance/ram_reg/CLKBWRCLK
+    RAMB36_X0Y9          RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_DOBDO[20])
+                                                      2.454     2.454 r  dual_port_ram_instance/ram_reg/DOBDO[20]
+                         net (fo=1, routed)           1.313     3.767    riscv_steel_core_instance/csr_file_instance/DOBDO[20]
+    SLICE_X14Y45         LUT5 (Prop_lut5_I0_O)        0.124     3.891 r  riscv_steel_core_instance/csr_file_instance/instruction_csr_address_stage3[0]_i_1/O
+                         net (fo=2762, routed)       14.550    18.441    riscv_steel_core_instance/csr_file_instance/ram_reg_14[0]
+    SLICE_X57Y105        LUT2 (Prop_lut2_I0_O)        0.124    18.565 r  riscv_steel_core_instance/csr_file_instance/g0_b0__31_i_15/O
+                         net (fo=256, routed)         8.903    27.468    riscv_steel_core_instance/csr_file_instance/hashes_instance/haraka_core_intance/p_1_in[1]
+    SLICE_X13Y96         LUT6 (Prop_lut6_I5_O)        0.124    27.592 r  riscv_steel_core_instance/csr_file_instance/g0_b0__31_i_8/O
+                         net (fo=3, routed)           2.205    29.796    riscv_steel_core_instance/csr_file_instance/hashes_instance/haraka_core_intance/haraka_round_inst/p_0_in[1]
+    SLICE_X52Y95         LUT3 (Prop_lut3_I1_O)        0.148    29.944 r  riscv_steel_core_instance/csr_file_instance/g0_b0__31_i_2/O
+                         net (fo=32, routed)          1.583    31.527    riscv_steel_core_instance/csr_file_instance/g0_b0__31_i_2_n_0
+    SLICE_X51Y99         LUT6 (Prop_lut6_I1_O)        0.328    31.855 r  riscv_steel_core_instance/csr_file_instance/g0_b4__31/O
+                         net (fo=1, routed)           0.000    31.855    riscv_steel_core_instance/hashes_instance/haraka_core_intance/haraka_round_inst/sbytes_inst/genblk2[3].Q_fp_reg[3][28]_i_7_0
+    SLICE_X51Y99         MUXF7 (Prop_muxf7_I0_O)      0.238    32.093 r  riscv_steel_core_instance/hashes_instance/haraka_core_intance/haraka_round_inst/sbytes_inst/genblk2[3].Q_fp_reg[3][28]_i_13/O
+                         net (fo=1, routed)           0.000    32.093    riscv_steel_core_instance/hashes_instance/haraka_core_intance/haraka_round_inst/sbytes_inst/genblk2[3].Q_fp_reg[3][28]_i_13_n_0
+    SLICE_X51Y99         MUXF8 (Prop_muxf8_I0_O)      0.104    32.197 r  riscv_steel_core_instance/hashes_instance/haraka_core_intance/haraka_round_inst/sbytes_inst/genblk2[3].Q_fp_reg[3][28]_i_7/O
+                         net (fo=5, routed)           0.990    33.187    riscv_steel_core_instance/csr_file_instance/new_b_wire[4]
+    SLICE_X41Y99         LUT6 (Prop_lut6_I0_O)        0.316    33.503 r  riscv_steel_core_instance/csr_file_instance/genblk2[3].Q_fp[3][13]_i_4/O
+                         net (fo=4, routed)           1.535    35.038    riscv_steel_core_instance/csr_file_instance/hashes_instance/haraka_core_intance/haraka_round_inst/new_block_10482_out[5]
+    SLICE_X28Y99         LUT3 (Prop_lut3_I1_O)        0.124    35.162 r  riscv_steel_core_instance/csr_file_instance/genblk2[8].Q_fp[8][13]_i_4/O
+                         net (fo=5, routed)           1.294    36.456    riscv_steel_core_instance/csr_file_instance/hashes_instance/mix_1[109]
+    SLICE_X28Y98         LUT6 (Prop_lut6_I5_O)        0.124    36.580 r  riscv_steel_core_instance/csr_file_instance/genblk2[14].Q_fp[14][13]_i_5/O
+                         net (fo=1, routed)           0.000    36.580    riscv_steel_core_instance/csr_file_instance/genblk2[14].Q_fp[14][13]_i_5_n_0
+    SLICE_X28Y98         MUXF7 (Prop_muxf7_I1_O)      0.217    36.797 r  riscv_steel_core_instance/csr_file_instance/genblk2[14].Q_fp_reg[14][13]_i_3/O
+                         net (fo=1, routed)           1.575    38.371    riscv_steel_core_instance/csr_file_instance/new_block_1[205]
+    SLICE_X38Y83         LUT5 (Prop_lut5_I4_O)        0.299    38.670 r  riscv_steel_core_instance/csr_file_instance/genblk2[14].Q_fp[14][13]_i_1/O
+                         net (fo=1, routed)           0.000    38.670    riscv_steel_core_instance/register_file_instance/genblk2[14].Q_fp_reg[14][31]_1[13]
+    SLICE_X38Y83         FDRE                                         r  riscv_steel_core_instance/register_file_instance/genblk2[14].Q_fp_reg[14][13]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 dual_port_ram_instance/ram_reg/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E1)
+  Destination:            riscv_steel_core_instance/register_file_instance/genblk2[10].Q_fp_reg[10][17]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        38.650ns  (logic 4.342ns (11.234%)  route 34.308ns (88.766%))
+  Logic Levels:           12  (LUT2=1 LUT3=1 LUT5=3 LUT6=5 MUXF7=1 RAMB36E1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y9          RAMB36E1                     0.000     0.000 r  dual_port_ram_instance/ram_reg/CLKBWRCLK
+    RAMB36_X0Y9          RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_DOBDO[20])
+                                                      2.454     2.454 r  dual_port_ram_instance/ram_reg/DOBDO[20]
+                         net (fo=1, routed)           1.313     3.767    riscv_steel_core_instance/csr_file_instance/DOBDO[20]
+    SLICE_X14Y45         LUT5 (Prop_lut5_I0_O)        0.124     3.891 r  riscv_steel_core_instance/csr_file_instance/instruction_csr_address_stage3[0]_i_1/O
+                         net (fo=2762, routed)       14.550    18.441    riscv_steel_core_instance/csr_file_instance/ram_reg_14[0]
+    SLICE_X57Y105        LUT2 (Prop_lut2_I0_O)        0.124    18.565 r  riscv_steel_core_instance/csr_file_instance/g0_b0__31_i_15/O
+                         net (fo=256, routed)         8.904    27.469    riscv_steel_core_instance/csr_file_instance/hashes_instance/haraka_core_intance/p_1_in[1]
+    SLICE_X13Y96         LUT6 (Prop_lut6_I4_O)        0.124    27.593 r  riscv_steel_core_instance/csr_file_instance/g0_b0__32_i_11/O
+                         net (fo=3, routed)           1.706    29.298    riscv_steel_core_instance/csr_file_instance/hashes_instance/haraka_core_intance/haraka_round_inst/p_0_in[12]
+    SLICE_X49Y96         LUT3 (Prop_lut3_I1_O)        0.152    29.450 r  riscv_steel_core_instance/csr_file_instance/g0_b0__32_i_5/O
+                         net (fo=32, routed)          1.542    30.992    riscv_steel_core_instance/csr_file_instance/g0_b0__32_i_5_n_0
+    SLICE_X51Y105        LUT6 (Prop_lut6_I4_O)        0.332    31.324 r  riscv_steel_core_instance/csr_file_instance/g0_b7__32/O
+                         net (fo=1, routed)           0.000    31.324    riscv_steel_core_instance/hashes_instance/haraka_core_intance/haraka_round_inst/sbytes_inst/genblk2[2].Q_fp[2][20]_i_8_3
+    SLICE_X51Y105        MUXF7 (Prop_muxf7_I0_O)      0.238    31.562 r  riscv_steel_core_instance/hashes_instance/haraka_core_intance/haraka_round_inst/sbytes_inst/sbox_inferred__0/genblk2[2].Q_fp_reg[2][31]_i_38/O
+                         net (fo=4, routed)           0.825    32.387    riscv_steel_core_instance/csr_file_instance/genblk2[2].Q_fp[2][12]_i_5_6
+    SLICE_X51Y104        LUT5 (Prop_lut5_I2_O)        0.298    32.685 r  riscv_steel_core_instance/csr_file_instance/genblk2[2].Q_fp[2][17]_i_8/O
+                         net (fo=2, routed)           0.776    33.462    riscv_steel_core_instance/csr_file_instance/hashes_instance/haraka_core_intance/haraka_round_inst/p_230_in[1]
+    SLICE_X57Y103        LUT6 (Prop_lut6_I4_O)        0.124    33.586 r  riscv_steel_core_instance/csr_file_instance/genblk2[2].Q_fp[2][17]_i_5/O
+                         net (fo=4, routed)           2.183    35.769    riscv_steel_core_instance/csr_file_instance/hashes_instance/haraka_core_intance/haraka_round_inst/new_block_10473_out[1]
+    SLICE_X37Y103        LUT6 (Prop_lut6_I4_O)        0.124    35.893 r  riscv_steel_core_instance/csr_file_instance/genblk2[10].Q_fp[10][17]_i_4/O
+                         net (fo=1, routed)           0.937    36.830    riscv_steel_core_instance/csr_file_instance/hashes_instance/p_0_in[81]
+    SLICE_X34Y103        LUT5 (Prop_lut5_I3_O)        0.124    36.954 r  riscv_steel_core_instance/csr_file_instance/genblk2[10].Q_fp[10][17]_i_3/O
+                         net (fo=1, routed)           1.572    38.526    riscv_steel_core_instance/csr_file_instance/new_block_1[81]
+    SLICE_X34Y85         LUT6 (Prop_lut6_I5_O)        0.124    38.650 r  riscv_steel_core_instance/csr_file_instance/genblk2[10].Q_fp[10][17]_i_1/O
+                         net (fo=1, routed)           0.000    38.650    riscv_steel_core_instance/register_file_instance/genblk2[10].Q_fp_reg[10][31]_2[17]
+    SLICE_X34Y85         FDRE                                         r  riscv_steel_core_instance/register_file_instance/genblk2[10].Q_fp_reg[10][17]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 dual_port_ram_instance/ram_reg/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E1)
+  Destination:            riscv_steel_core_instance/register_file_instance/genblk2[11].Q_fp_reg[11][7]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        38.474ns  (logic 4.969ns (12.915%)  route 33.505ns (87.085%))
+  Logic Levels:           13  (LUT2=1 LUT3=2 LUT5=1 LUT6=5 MUXF7=2 MUXF8=1 RAMB36E1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y9          RAMB36E1                     0.000     0.000 r  dual_port_ram_instance/ram_reg/CLKBWRCLK
+    RAMB36_X0Y9          RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_DOBDO[20])
+                                                      2.454     2.454 r  dual_port_ram_instance/ram_reg/DOBDO[20]
+                         net (fo=1, routed)           1.313     3.767    riscv_steel_core_instance/csr_file_instance/DOBDO[20]
+    SLICE_X14Y45         LUT5 (Prop_lut5_I0_O)        0.124     3.891 r  riscv_steel_core_instance/csr_file_instance/instruction_csr_address_stage3[0]_i_1/O
+                         net (fo=2762, routed)       14.550    18.441    riscv_steel_core_instance/csr_file_instance/ram_reg_14[0]
+    SLICE_X57Y105        LUT2 (Prop_lut2_I0_O)        0.124    18.565 r  riscv_steel_core_instance/csr_file_instance/g0_b0__31_i_15/O
+                         net (fo=256, routed)         7.536    26.101    riscv_steel_core_instance/csr_file_instance/hashes_instance/haraka_core_intance/p_1_in[1]
+    SLICE_X12Y102        LUT6 (Prop_lut6_I5_O)        0.124    26.225 r  riscv_steel_core_instance/csr_file_instance/g0_b0__49_i_11/O
+                         net (fo=3, routed)           1.192    27.417    riscv_steel_core_instance/csr_file_instance/hashes_instance/haraka_core_intance/haraka_round_inst/p_0_in[148]
+    SLICE_X30Y102        LUT3 (Prop_lut3_I1_O)        0.153    27.570 r  riscv_steel_core_instance/csr_file_instance/g0_b0__49_i_5/O
+                         net (fo=32, routed)          2.191    29.762    riscv_steel_core_instance/csr_file_instance/g0_b0__49_i_5_n_0
+    SLICE_X49Y114        LUT6 (Prop_lut6_I4_O)        0.331    30.093 r  riscv_steel_core_instance/csr_file_instance/g1_b7__49/O
+                         net (fo=1, routed)           0.000    30.093    riscv_steel_core_instance/hashes_instance/haraka_core_intance/haraka_round_inst/sbytes_inst/genblk2[2].Q_fp[2][28]_i_8_4
+    SLICE_X49Y114        MUXF7 (Prop_muxf7_I1_O)      0.245    30.338 r  riscv_steel_core_instance/hashes_instance/haraka_core_intance/haraka_round_inst/sbytes_inst/sbox_inferred__17/genblk2[2].Q_fp_reg[2][31]_i_27/O
+                         net (fo=4, routed)           0.000    30.338    riscv_steel_core_instance/hashes_instance/haraka_core_intance/haraka_round_inst/sbytes_inst/genblk2[4].Q_fp_reg[4][22]_5
+    SLICE_X49Y114        MUXF8 (Prop_muxf8_I0_O)      0.104    30.442 r  riscv_steel_core_instance/hashes_instance/haraka_core_intance/haraka_round_inst/sbytes_inst/sbox_inferred__17/genblk2[2].Q_fp_reg[2][31]_i_10/O
+                         net (fo=6, routed)           1.590    32.032    riscv_steel_core_instance/csr_file_instance/new_b_wire[151]
+    SLICE_X55Y111        LUT6 (Prop_lut6_I2_O)        0.316    32.348 r  riscv_steel_core_instance/csr_file_instance/genblk2[2].Q_fp[2][7]_i_4/O
+                         net (fo=3, routed)           2.346    34.694    riscv_steel_core_instance/csr_file_instance/hashes_instance/haraka_core_intance/haraka_round_inst/new_block_10502_out[7]
+    SLICE_X46Y93         LUT3 (Prop_lut3_I1_O)        0.150    34.844 r  riscv_steel_core_instance/csr_file_instance/genblk2[3].Q_fp[3][7]_i_5/O
+                         net (fo=5, routed)           1.394    36.238    riscv_steel_core_instance/csr_file_instance/hashes_instance/mix_1[167]
+    SLICE_X48Y89         LUT6 (Prop_lut6_I5_O)        0.328    36.566 r  riscv_steel_core_instance/csr_file_instance/genblk2[11].Q_fp[11][7]_i_5/O
+                         net (fo=1, routed)           0.000    36.566    riscv_steel_core_instance/csr_file_instance/genblk2[11].Q_fp[11][7]_i_5_n_0
+    SLICE_X48Y89         MUXF7 (Prop_muxf7_I1_O)      0.217    36.783 r  riscv_steel_core_instance/csr_file_instance/genblk2[11].Q_fp_reg[11][7]_i_3/O
+                         net (fo=1, routed)           1.392    38.175    riscv_steel_core_instance/csr_file_instance/new_block_1[103]
+    SLICE_X60Y86         LUT6 (Prop_lut6_I5_O)        0.299    38.474 r  riscv_steel_core_instance/csr_file_instance/genblk2[11].Q_fp[11][7]_i_1/O
+                         net (fo=1, routed)           0.000    38.474    riscv_steel_core_instance/register_file_instance/genblk2[11].Q_fp_reg[11][31]_2[7]
+    SLICE_X60Y86         FDRE                                         r  riscv_steel_core_instance/register_file_instance/genblk2[11].Q_fp_reg[11][7]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 dual_port_ram_instance/ram_reg/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E1)
+  Destination:            riscv_steel_core_instance/register_file_instance/genblk2[12].Q_fp_reg[12][24]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        38.470ns  (logic 4.735ns (12.308%)  route 33.735ns (87.692%))
+  Logic Levels:           13  (LUT2=1 LUT3=2 LUT5=2 LUT6=4 MUXF7=2 MUXF8=1 RAMB36E1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y9          RAMB36E1                     0.000     0.000 r  dual_port_ram_instance/ram_reg/CLKBWRCLK
+    RAMB36_X0Y9          RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_DOBDO[20])
+                                                      2.454     2.454 r  dual_port_ram_instance/ram_reg/DOBDO[20]
+                         net (fo=1, routed)           1.313     3.767    riscv_steel_core_instance/csr_file_instance/DOBDO[20]
+    SLICE_X14Y45         LUT5 (Prop_lut5_I0_O)        0.124     3.891 r  riscv_steel_core_instance/csr_file_instance/instruction_csr_address_stage3[0]_i_1/O
+                         net (fo=2762, routed)       14.550    18.441    riscv_steel_core_instance/csr_file_instance/ram_reg_14[0]
+    SLICE_X57Y105        LUT2 (Prop_lut2_I0_O)        0.124    18.565 r  riscv_steel_core_instance/csr_file_instance/g0_b0__31_i_15/O
+                         net (fo=256, routed)         8.719    27.284    riscv_steel_core_instance/csr_file_instance/hashes_instance/haraka_core_intance/p_1_in[1]
+    SLICE_X14Y96         LUT6 (Prop_lut6_I3_O)        0.124    27.408 r  riscv_steel_core_instance/csr_file_instance/g0_b0__32_i_8/O
+                         net (fo=3, routed)           1.742    29.150    riscv_steel_core_instance/csr_file_instance/hashes_instance/haraka_core_intance/haraka_round_inst/p_0_in[9]
+    SLICE_X53Y97         LUT3 (Prop_lut3_I1_O)        0.154    29.304 r  riscv_steel_core_instance/csr_file_instance/g0_b0__32_i_2/O
+                         net (fo=32, routed)          1.809    31.113    riscv_steel_core_instance/csr_file_instance/g0_b0__32_i_2_n_0
+    SLICE_X50Y105        LUT6 (Prop_lut6_I1_O)        0.327    31.440 r  riscv_steel_core_instance/csr_file_instance/g1_b0__32/O
+                         net (fo=1, routed)           0.000    31.440    riscv_steel_core_instance/hashes_instance/haraka_core_intance/haraka_round_inst/sbytes_inst/genblk2[2].Q_fp[2][17]_i_8_3
+    SLICE_X50Y105        MUXF7 (Prop_muxf7_I1_O)      0.247    31.687 r  riscv_steel_core_instance/hashes_instance/haraka_core_intance/haraka_round_inst/sbytes_inst/sbox_inferred__0/genblk2[2].Q_fp_reg[2][24]_i_19/O
+                         net (fo=2, routed)           0.000    31.687    riscv_steel_core_instance/hashes_instance/haraka_core_intance/haraka_round_inst/sbytes_inst/genblk2[0].Q_fp_reg[0][14]
+    SLICE_X50Y105        MUXF8 (Prop_muxf8_I0_O)      0.098    31.785 r  riscv_steel_core_instance/hashes_instance/haraka_core_intance/haraka_round_inst/sbytes_inst/sbox_inferred__0/genblk2[2].Q_fp_reg[2][24]_i_11/O
+                         net (fo=3, routed)           1.135    32.921    riscv_steel_core_instance/csr_file_instance/new_b_wire[8]
+    SLICE_X57Y104        LUT6 (Prop_lut6_I1_O)        0.319    33.240 r  riscv_steel_core_instance/csr_file_instance/genblk2[2].Q_fp[2][24]_i_5/O
+                         net (fo=3, routed)           1.028    34.268    riscv_steel_core_instance/csr_file_instance/hashes_instance/haraka_core_intance/haraka_round_inst/new_block_10476_out[0]
+    SLICE_X57Y96         LUT3 (Prop_lut3_I1_O)        0.124    34.392 r  riscv_steel_core_instance/csr_file_instance/genblk2[4].Q_fp[4][24]_i_6/O
+                         net (fo=5, routed)           2.452    36.844    riscv_steel_core_instance/csr_file_instance/hashes_instance/mix_1[88]
+    SLICE_X32Y96         LUT6 (Prop_lut6_I5_O)        0.124    36.968 r  riscv_steel_core_instance/csr_file_instance/genblk2[12].Q_fp[12][24]_i_6/O
+                         net (fo=1, routed)           0.000    36.968    riscv_steel_core_instance/csr_file_instance/genblk2[12].Q_fp[12][24]_i_6_n_0
+    SLICE_X32Y96         MUXF7 (Prop_muxf7_I1_O)      0.217    37.185 r  riscv_steel_core_instance/csr_file_instance/genblk2[12].Q_fp_reg[12][24]_i_3/O
+                         net (fo=1, routed)           0.986    38.171    riscv_steel_core_instance/csr_file_instance/new_block_1[152]
+    SLICE_X34Y86         LUT5 (Prop_lut5_I4_O)        0.299    38.470 r  riscv_steel_core_instance/csr_file_instance/genblk2[12].Q_fp[12][24]_i_1/O
+                         net (fo=1, routed)           0.000    38.470    riscv_steel_core_instance/register_file_instance/genblk2[12].Q_fp_reg[12][31]_3[24]
+    SLICE_X34Y86         FDRE                                         r  riscv_steel_core_instance/register_file_instance/genblk2[12].Q_fp_reg[12][24]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 dual_port_ram_instance/ram_reg/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E1)
+  Destination:            riscv_steel_core_instance/register_file_instance/genblk2[12].Q_fp_reg[12][30]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        38.463ns  (logic 4.682ns (12.173%)  route 33.781ns (87.827%))
+  Logic Levels:           13  (LUT2=1 LUT3=2 LUT5=3 LUT6=3 MUXF7=2 MUXF8=1 RAMB36E1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y9          RAMB36E1                     0.000     0.000 r  dual_port_ram_instance/ram_reg/CLKBWRCLK
+    RAMB36_X0Y9          RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_DOBDO[20])
+                                                      2.454     2.454 r  dual_port_ram_instance/ram_reg/DOBDO[20]
+                         net (fo=1, routed)           1.313     3.767    riscv_steel_core_instance/csr_file_instance/DOBDO[20]
+    SLICE_X14Y45         LUT5 (Prop_lut5_I0_O)        0.124     3.891 r  riscv_steel_core_instance/csr_file_instance/instruction_csr_address_stage3[0]_i_1/O
+                         net (fo=2762, routed)       14.550    18.441    riscv_steel_core_instance/csr_file_instance/ram_reg_14[0]
+    SLICE_X57Y105        LUT2 (Prop_lut2_I0_O)        0.124    18.565 r  riscv_steel_core_instance/csr_file_instance/g0_b0__31_i_15/O
+                         net (fo=256, routed)         8.719    27.284    riscv_steel_core_instance/csr_file_instance/hashes_instance/haraka_core_intance/p_1_in[1]
+    SLICE_X14Y96         LUT6 (Prop_lut6_I3_O)        0.124    27.408 r  riscv_steel_core_instance/csr_file_instance/g0_b0__32_i_8/O
+                         net (fo=3, routed)           1.742    29.150    riscv_steel_core_instance/csr_file_instance/hashes_instance/haraka_core_intance/haraka_round_inst/p_0_in[9]
+    SLICE_X53Y97         LUT3 (Prop_lut3_I1_O)        0.154    29.304 r  riscv_steel_core_instance/csr_file_instance/g0_b0__32_i_2/O
+                         net (fo=32, routed)          2.304    31.609    riscv_steel_core_instance/csr_file_instance/g0_b0__32_i_2_n_0
+    SLICE_X50Y101        LUT6 (Prop_lut6_I1_O)        0.327    31.936 r  riscv_steel_core_instance/csr_file_instance/g2_b6__32/O
+                         net (fo=1, routed)           0.000    31.936    riscv_steel_core_instance/hashes_instance/haraka_core_intance/haraka_round_inst/sbytes_inst/sbox_inferred__0/genblk2[2].Q_fp_reg[2][30]_i_11_2
+    SLICE_X50Y101        MUXF7 (Prop_muxf7_I0_O)      0.209    32.145 r  riscv_steel_core_instance/hashes_instance/haraka_core_intance/haraka_round_inst/sbytes_inst/sbox_inferred__0/genblk2[2].Q_fp_reg[2][30]_i_25/O
+                         net (fo=1, routed)           0.000    32.145    riscv_steel_core_instance/hashes_instance/haraka_core_intance/haraka_round_inst/sbytes_inst/sbox_inferred__0/genblk2[2].Q_fp_reg[2][30]_i_25_n_0
+    SLICE_X50Y101        MUXF8 (Prop_muxf8_I1_O)      0.088    32.233 r  riscv_steel_core_instance/hashes_instance/haraka_core_intance/haraka_round_inst/sbytes_inst/sbox_inferred__0/genblk2[2].Q_fp_reg[2][30]_i_11/O
+                         net (fo=5, routed)           1.279    33.511    riscv_steel_core_instance/csr_file_instance/new_b_wire[14]
+    SLICE_X55Y101        LUT6 (Prop_lut6_I1_O)        0.319    33.830 r  riscv_steel_core_instance/csr_file_instance/genblk2[2].Q_fp[2][30]_i_5/O
+                         net (fo=3, routed)           0.768    34.598    riscv_steel_core_instance/csr_file_instance/hashes_instance/haraka_core_intance/haraka_round_inst/new_block_10476_out[6]
+    SLICE_X57Y95         LUT3 (Prop_lut3_I1_O)        0.124    34.722 r  riscv_steel_core_instance/csr_file_instance/genblk2[4].Q_fp[4][30]_i_6/O
+                         net (fo=5, routed)           1.904    36.627    riscv_steel_core_instance/csr_file_instance/hashes_instance/mix_1[94]
+    SLICE_X31Y85         LUT5 (Prop_lut5_I4_O)        0.124    36.751 r  riscv_steel_core_instance/csr_file_instance/genblk2[12].Q_fp[12][30]_i_5/O
+                         net (fo=1, routed)           0.000    36.751    riscv_steel_core_instance/csr_file_instance/genblk2[12].Q_fp[12][30]_i_5_n_0
+    SLICE_X31Y85         MUXF7 (Prop_muxf7_I0_O)      0.212    36.963 r  riscv_steel_core_instance/csr_file_instance/genblk2[12].Q_fp_reg[12][30]_i_3/O
+                         net (fo=1, routed)           1.202    38.164    riscv_steel_core_instance/csr_file_instance/new_block_1[158]
+    SLICE_X45Y85         LUT5 (Prop_lut5_I4_O)        0.299    38.463 r  riscv_steel_core_instance/csr_file_instance/genblk2[12].Q_fp[12][30]_i_1/O
+                         net (fo=1, routed)           0.000    38.463    riscv_steel_core_instance/register_file_instance/genblk2[12].Q_fp_reg[12][31]_3[30]
+    SLICE_X45Y85         FDRE                                         r  riscv_steel_core_instance/register_file_instance/genblk2[12].Q_fp_reg[12][30]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 dual_port_ram_instance/ram_reg/CLKBWRCLK
+                            (rising edge-triggered cell RAMB36E1)
+  Destination:            riscv_steel_core_instance/register_file_instance/genblk2[10].Q_fp_reg[10][23]/D
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        38.338ns  (logic 4.913ns (12.815%)  route 33.425ns (87.185%))
+  Logic Levels:           13  (LUT2=1 LUT3=2 LUT5=1 LUT6=5 MUXF7=2 MUXF8=1 RAMB36E1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y9          RAMB36E1                     0.000     0.000 r  dual_port_ram_instance/ram_reg/CLKBWRCLK
+    RAMB36_X0Y9          RAMB36E1 (Prop_ramb36e1_CLKBWRCLK_DOBDO[20])
+                                                      2.454     2.454 r  dual_port_ram_instance/ram_reg/DOBDO[20]
+                         net (fo=1, routed)           1.313     3.767    riscv_steel_core_instance/csr_file_instance/DOBDO[20]
+    SLICE_X14Y45         LUT5 (Prop_lut5_I0_O)        0.124     3.891 r  riscv_steel_core_instance/csr_file_instance/instruction_csr_address_stage3[0]_i_1/O
+                         net (fo=2762, routed)       14.550    18.441    riscv_steel_core_instance/csr_file_instance/ram_reg_14[0]
+    SLICE_X57Y105        LUT2 (Prop_lut2_I0_O)        0.124    18.565 r  riscv_steel_core_instance/csr_file_instance/g0_b0__31_i_15/O
+                         net (fo=256, routed)         8.719    27.284    riscv_steel_core_instance/csr_file_instance/hashes_instance/haraka_core_intance/p_1_in[1]
+    SLICE_X14Y96         LUT6 (Prop_lut6_I3_O)        0.124    27.408 r  riscv_steel_core_instance/csr_file_instance/g0_b0__32_i_8/O
+                         net (fo=3, routed)           1.742    29.150    riscv_steel_core_instance/csr_file_instance/hashes_instance/haraka_core_intance/haraka_round_inst/p_0_in[9]
+    SLICE_X53Y97         LUT3 (Prop_lut3_I1_O)        0.154    29.304 r  riscv_steel_core_instance/csr_file_instance/g0_b0__32_i_2/O
+                         net (fo=32, routed)          2.304    31.609    riscv_steel_core_instance/csr_file_instance/g0_b0__32_i_2_n_0
+    SLICE_X50Y101        LUT6 (Prop_lut6_I1_O)        0.327    31.936 r  riscv_steel_core_instance/csr_file_instance/g2_b6__32/O
+                         net (fo=1, routed)           0.000    31.936    riscv_steel_core_instance/hashes_instance/haraka_core_intance/haraka_round_inst/sbytes_inst/sbox_inferred__0/genblk2[2].Q_fp_reg[2][30]_i_11_2
+    SLICE_X50Y101        MUXF7 (Prop_muxf7_I0_O)      0.209    32.145 r  riscv_steel_core_instance/hashes_instance/haraka_core_intance/haraka_round_inst/sbytes_inst/sbox_inferred__0/genblk2[2].Q_fp_reg[2][30]_i_25/O
+                         net (fo=1, routed)           0.000    32.145    riscv_steel_core_instance/hashes_instance/haraka_core_intance/haraka_round_inst/sbytes_inst/sbox_inferred__0/genblk2[2].Q_fp_reg[2][30]_i_25_n_0
+    SLICE_X50Y101        MUXF8 (Prop_muxf8_I1_O)      0.088    32.233 r  riscv_steel_core_instance/hashes_instance/haraka_core_intance/haraka_round_inst/sbytes_inst/sbox_inferred__0/genblk2[2].Q_fp_reg[2][30]_i_11/O
+                         net (fo=5, routed)           0.673    32.905    riscv_steel_core_instance/csr_file_instance/new_b_wire[14]
+    SLICE_X53Y102        LUT6 (Prop_lut6_I4_O)        0.319    33.224 r  riscv_steel_core_instance/csr_file_instance/genblk2[2].Q_fp[2][23]_i_5/O
+                         net (fo=3, routed)           1.429    34.654    riscv_steel_core_instance/csr_file_instance/genblk2[2].Q_fp[2][23]_i_5_n_0
+    SLICE_X42Y96         LUT3 (Prop_lut3_I1_O)        0.146    34.800 r  riscv_steel_core_instance/csr_file_instance/genblk2[4].Q_fp[4][23]_i_6/O
+                         net (fo=5, routed)           1.755    36.554    riscv_steel_core_instance/csr_file_instance/hashes_instance/mix_1[87]
+    SLICE_X29Y87         LUT6 (Prop_lut6_I2_O)        0.328    36.882 r  riscv_steel_core_instance/csr_file_instance/genblk2[10].Q_fp[10][23]_i_5/O
+                         net (fo=1, routed)           0.000    36.882    riscv_steel_core_instance/csr_file_instance/genblk2[10].Q_fp[10][23]_i_5_n_0
+    SLICE_X29Y87         MUXF7 (Prop_muxf7_I1_O)      0.217    37.099 r  riscv_steel_core_instance/csr_file_instance/genblk2[10].Q_fp_reg[10][23]_i_3/O
+                         net (fo=1, routed)           0.940    38.039    riscv_steel_core_instance/csr_file_instance/new_block_1[87]
+    SLICE_X28Y86         LUT6 (Prop_lut6_I5_O)        0.299    38.338 r  riscv_steel_core_instance/csr_file_instance/genblk2[10].Q_fp[10][23]_i_1/O
+                         net (fo=1, routed)           0.000    38.338    riscv_steel_core_instance/register_file_instance/genblk2[10].Q_fp_reg[10][31]_2[23]
+    SLICE_X28Y86         FDRE                                         r  riscv_steel_core_instance/register_file_instance/genblk2[10].Q_fp_reg[10][23]/D
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 riscv_steel_core_instance/program_counter_reg[3]/C
+                            (rising edge-triggered cell FDSE)
+  Destination:            riscv_steel_core_instance/program_counter_stage3_reg[3]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.223ns  (logic 0.141ns (63.332%)  route 0.082ns (36.668%))
+  Logic Levels:           1  (FDSE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X13Y42         FDSE                         0.000     0.000 r  riscv_steel_core_instance/program_counter_reg[3]/C
+    SLICE_X13Y42         FDSE (Prop_fdse_C_Q)         0.141     0.141 r  riscv_steel_core_instance/program_counter_reg[3]/Q
+                         net (fo=3, routed)           0.082     0.223    riscv_steel_core_instance/program_counter[3]
+    SLICE_X13Y42         FDSE                                         r  riscv_steel_core_instance/program_counter_stage3_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 riscv_steel_core_instance/program_counter_stage3_reg[22]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            riscv_steel_core_instance/csr_file_instance/mepc_reg[22]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.243ns  (logic 0.186ns (76.391%)  route 0.057ns (23.609%))
+  Logic Levels:           2  (FDRE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y53          FDRE                         0.000     0.000 r  riscv_steel_core_instance/program_counter_stage3_reg[22]/C
+    SLICE_X1Y53          FDRE (Prop_fdre_C_Q)         0.141     0.141 r  riscv_steel_core_instance/program_counter_stage3_reg[22]/Q
+                         net (fo=1, routed)           0.057     0.198    riscv_steel_core_instance/csr_file_instance/program_counter_stage3[21]
+    SLICE_X0Y53          LUT6 (Prop_lut6_I0_O)        0.045     0.243 r  riscv_steel_core_instance/csr_file_instance/mepc[22]_i_1/O
+                         net (fo=1, routed)           0.000     0.243    riscv_steel_core_instance/csr_file_instance/mepc0_in[22]
+    SLICE_X0Y53          FDRE                                         r  riscv_steel_core_instance/csr_file_instance/mepc_reg[22]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 riscv_steel_core_instance/register_file_instance/genblk2[8].Q_fp_reg[8][0]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            riscv_steel_core_instance/hashes_instance/forward_1_reg[0]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.269ns  (logic 0.141ns (52.456%)  route 0.128ns (47.544%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X45Y90         FDRE                         0.000     0.000 r  riscv_steel_core_instance/register_file_instance/genblk2[8].Q_fp_reg[8][0]/C
+    SLICE_X45Y90         FDRE (Prop_fdre_C_Q)         0.141     0.141 r  riscv_steel_core_instance/register_file_instance/genblk2[8].Q_fp_reg[8][0]/Q
+                         net (fo=39, routed)          0.128     0.269    riscv_steel_core_instance/hashes_instance/block_top_1[0]
+    SLICE_X44Y90         FDRE                                         r  riscv_steel_core_instance/hashes_instance/forward_1_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 riscv_steel_core_instance/target_address_adder_stage3_reg[20]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            riscv_steel_core_instance/csr_file_instance/mtval_reg[20]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.269ns  (logic 0.209ns (77.635%)  route 0.060ns (22.365%))
+  Logic Levels:           2  (FDRE=1 LUT4=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X10Y55         FDRE                         0.000     0.000 r  riscv_steel_core_instance/target_address_adder_stage3_reg[20]/C
+    SLICE_X10Y55         FDRE (Prop_fdre_C_Q)         0.164     0.164 r  riscv_steel_core_instance/target_address_adder_stage3_reg[20]/Q
+                         net (fo=2, routed)           0.060     0.224    riscv_steel_core_instance/csr_file_instance/mtval_reg[31]_0[20]
+    SLICE_X11Y55         LUT4 (Prop_lut4_I1_O)        0.045     0.269 r  riscv_steel_core_instance/csr_file_instance/mtval[20]_i_1/O
+                         net (fo=1, routed)           0.000     0.269    riscv_steel_core_instance/csr_file_instance/mtval0_in[20]
+    SLICE_X11Y55         FDRE                                         r  riscv_steel_core_instance/csr_file_instance/mtval_reg[20]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 riscv_steel_core_instance/program_counter_reg[2]/C
+                            (rising edge-triggered cell FDSE)
+  Destination:            riscv_steel_core_instance/program_counter_stage3_reg[2]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.272ns  (logic 0.141ns (51.927%)  route 0.131ns (48.073%))
+  Logic Levels:           1  (FDSE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X13Y45         FDSE                         0.000     0.000 r  riscv_steel_core_instance/program_counter_reg[2]/C
+    SLICE_X13Y45         FDSE (Prop_fdse_C_Q)         0.141     0.141 r  riscv_steel_core_instance/program_counter_reg[2]/Q
+                         net (fo=4, routed)           0.131     0.272    riscv_steel_core_instance/program_counter[2]
+    SLICE_X12Y45         FDSE                                         r  riscv_steel_core_instance/program_counter_stage3_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 riscv_steel_core_instance/register_file_instance/genblk2[1].Q_fp_reg[1][31]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            riscv_steel_core_instance/hashes_instance/forward_2_reg[63]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.277ns  (logic 0.141ns (50.829%)  route 0.136ns (49.171%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X37Y86         FDRE                         0.000     0.000 r  riscv_steel_core_instance/register_file_instance/genblk2[1].Q_fp_reg[1][31]/C
+    SLICE_X37Y86         FDRE (Prop_fdre_C_Q)         0.141     0.141 r  riscv_steel_core_instance/register_file_instance/genblk2[1].Q_fp_reg[1][31]/Q
+                         net (fo=8, routed)           0.136     0.277    riscv_steel_core_instance/hashes_instance/block_top_2[52]
+    SLICE_X37Y87         FDRE                                         r  riscv_steel_core_instance/hashes_instance/forward_2_reg[63]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 riscv_steel_core_instance/register_file_instance/genblk2[4].Q_fp_reg[4][30]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            riscv_steel_core_instance/hashes_instance/forward_2_reg[158]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.279ns  (logic 0.141ns (50.463%)  route 0.138ns (49.537%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X28Y85         FDRE                         0.000     0.000 r  riscv_steel_core_instance/register_file_instance/genblk2[4].Q_fp_reg[4][30]/C
+    SLICE_X28Y85         FDRE (Prop_fdre_C_Q)         0.141     0.141 r  riscv_steel_core_instance/register_file_instance/genblk2[4].Q_fp_reg[4][30]/Q
+                         net (fo=7, routed)           0.138     0.279    riscv_steel_core_instance/hashes_instance/block_top_2[131]
+    SLICE_X31Y85         FDRE                                         r  riscv_steel_core_instance/hashes_instance/forward_2_reg[158]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 riscv_steel_core_instance/register_file_instance/genblk2[3].Q_fp_reg[3][0]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            riscv_steel_core_instance/hashes_instance/forward_2_reg[96]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.282ns  (logic 0.141ns (49.979%)  route 0.141ns (50.021%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X48Y88         FDRE                         0.000     0.000 r  riscv_steel_core_instance/register_file_instance/genblk2[3].Q_fp_reg[3][0]/C
+    SLICE_X48Y88         FDRE (Prop_fdre_C_Q)         0.141     0.141 r  riscv_steel_core_instance/register_file_instance/genblk2[3].Q_fp_reg[3][0]/Q
+                         net (fo=9, routed)           0.141     0.282    riscv_steel_core_instance/hashes_instance/rdata_hash_vector[15]
+    SLICE_X48Y90         FDRE                                         r  riscv_steel_core_instance/hashes_instance/forward_2_reg[96]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 riscv_steel_core_instance/register_file_instance/genblk2[10].Q_fp_reg[10][23]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            riscv_steel_core_instance/hashes_instance/forward_1_reg[87]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.282ns  (logic 0.141ns (49.926%)  route 0.141ns (50.074%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X28Y86         FDRE                         0.000     0.000 r  riscv_steel_core_instance/register_file_instance/genblk2[10].Q_fp_reg[10][23]/C
+    SLICE_X28Y86         FDRE (Prop_fdre_C_Q)         0.141     0.141 r  riscv_steel_core_instance/register_file_instance/genblk2[10].Q_fp_reg[10][23]/Q
+                         net (fo=15, routed)          0.141     0.282    riscv_steel_core_instance/hashes_instance/block_top_1[72]
+    SLICE_X29Y87         FDRE                                         r  riscv_steel_core_instance/hashes_instance/forward_1_reg[87]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 riscv_steel_core_instance/register_file_instance/genblk2[3].Q_fp_reg[3][7]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            riscv_steel_core_instance/hashes_instance/forward_2_reg[103]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.282ns  (logic 0.141ns (49.926%)  route 0.141ns (50.074%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X58Y88         FDRE                         0.000     0.000 r  riscv_steel_core_instance/register_file_instance/genblk2[3].Q_fp_reg[3][7]/C
+    SLICE_X58Y88         FDRE (Prop_fdre_C_Q)         0.141     0.141 r  riscv_steel_core_instance/register_file_instance/genblk2[3].Q_fp_reg[3][7]/Q
+                         net (fo=9, routed)           0.141     0.282    riscv_steel_core_instance/hashes_instance/block_top_2[85]
+    SLICE_X58Y89         FDRE                                         r  riscv_steel_core_instance/hashes_instance/forward_2_reg[103]/D
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+

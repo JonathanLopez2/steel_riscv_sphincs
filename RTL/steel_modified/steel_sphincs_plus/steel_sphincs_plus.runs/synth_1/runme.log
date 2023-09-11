@@ -1,0 +1,1055 @@
+
+*** Running vivado
+    with args -log test_steel_soc.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source test_steel_soc.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source test_steel_soc.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 394.344 ; gain = 62.863
+Command: read_checkpoint -auto_incremental -incremental D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/steel_sphincs_plus.srcs/utils_1/imports/synth_1/steel_soc.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/steel_sphincs_plus.srcs/utils_1/imports/synth_1/steel_soc.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top test_steel_soc -part xc7s50csga324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Device 21-403] Loading part xc7s50csga324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 19556
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+INFO: [Synth 8-11241] undeclared symbol 'misaligned_word', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:403]
+INFO: [Synth 8-11241] undeclared symbol 'misaligned_half', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:407]
+INFO: [Synth 8-11241] undeclared symbol 'misaligned', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:411]
+INFO: [Synth 8-11241] undeclared symbol 'branch_type', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1207]
+INFO: [Synth 8-11241] undeclared symbol 'jal_type', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1208]
+INFO: [Synth 8-11241] undeclared symbol 'jalr_type', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1209]
+INFO: [Synth 8-11241] undeclared symbol 'auipc_type', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1210]
+INFO: [Synth 8-11241] undeclared symbol 'lui_type', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1211]
+INFO: [Synth 8-11241] undeclared symbol 'load_type', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1212]
+INFO: [Synth 8-11241] undeclared symbol 'store_type', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1213]
+INFO: [Synth 8-11241] undeclared symbol 'system_type', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1214]
+INFO: [Synth 8-11241] undeclared symbol 'op_type', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1215]
+INFO: [Synth 8-11241] undeclared symbol 'op_imm_type', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1216]
+INFO: [Synth 8-11241] undeclared symbol 'misc_mem_type', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1217]
+INFO: [Synth 8-11241] undeclared symbol 'flw_type', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1219]
+INFO: [Synth 8-11241] undeclared symbol 'fsw_type', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1220]
+INFO: [Synth 8-11241] undeclared symbol 'keccak_type', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1221]
+INFO: [Synth 8-11241] undeclared symbol 'haraka_type', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1223]
+INFO: [Synth 8-11241] undeclared symbol 'addi', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1232]
+INFO: [Synth 8-11241] undeclared symbol 'slti', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1233]
+INFO: [Synth 8-11241] undeclared symbol 'sltiu', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1234]
+INFO: [Synth 8-11241] undeclared symbol 'andi', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1235]
+INFO: [Synth 8-11241] undeclared symbol 'ori', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1236]
+INFO: [Synth 8-11241] undeclared symbol 'xori', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1237]
+INFO: [Synth 8-11241] undeclared symbol 'slli', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1238]
+INFO: [Synth 8-11241] undeclared symbol 'srli', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1240]
+INFO: [Synth 8-11241] undeclared symbol 'srai', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1242]
+INFO: [Synth 8-11241] undeclared symbol 'add', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1244]
+INFO: [Synth 8-11241] undeclared symbol 'sub', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1246]
+INFO: [Synth 8-11241] undeclared symbol 'slt', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1248]
+INFO: [Synth 8-11241] undeclared symbol 'sltu', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1250]
+INFO: [Synth 8-11241] undeclared symbol 'is_and', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1252]
+INFO: [Synth 8-11241] undeclared symbol 'is_or', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1254]
+INFO: [Synth 8-11241] undeclared symbol 'is_xor', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1256]
+INFO: [Synth 8-11241] undeclared symbol 'sll', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1258]
+INFO: [Synth 8-11241] undeclared symbol 'srl', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1260]
+INFO: [Synth 8-11241] undeclared symbol 'sra', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1262]
+INFO: [Synth 8-11241] undeclared symbol 'csrxxx', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1264]
+INFO: [Synth 8-11241] undeclared symbol 'illegal_store', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1286]
+INFO: [Synth 8-11241] undeclared symbol 'illegal_load', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1290]
+INFO: [Synth 8-11241] undeclared symbol 'illegal_jalr', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1295]
+INFO: [Synth 8-11241] undeclared symbol 'illegal_branch', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1298]
+INFO: [Synth 8-11241] undeclared symbol 'illegal_op', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1302]
+INFO: [Synth 8-11241] undeclared symbol 'illegal_op_imm', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1305]
+INFO: [Synth 8-11241] undeclared symbol 'illegal_system', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1308]
+INFO: [Synth 8-11241] undeclared symbol 'unknown_type', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1311]
+INFO: [Synth 8-11241] undeclared symbol 'interrupt_pending', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1567]
+INFO: [Synth 8-11241] undeclared symbol 'exception_pending', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1572]
+INFO: [Synth 8-11241] undeclared symbol 'base_address_offset', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1930]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1198.441 ; gain = 406.941
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'test_steel_soc' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/steel_sphincs_plus.srcs/sources_1/new/test_steel_soc.v:23]
+INFO: [Synth 8-6157] synthesizing module 'riscv_steel_core' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:216]
+INFO: [Synth 8-6157] synthesizing module 'data_fetch_store_unit' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1004]
+INFO: [Synth 8-6155] done synthesizing module 'data_fetch_store_unit' (0#1) [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1004]
+INFO: [Synth 8-6157] synthesizing module 'decoder' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1160]
+INFO: [Synth 8-6155] done synthesizing module 'decoder' (0#1) [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1160]
+INFO: [Synth 8-6157] synthesizing module 'hashes' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/hashes.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'sub_bytes' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/sub_bytes.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'sub_bytes' (0#1) [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/sub_bytes.v:58]
+INFO: [Synth 8-6157] synthesizing module 'haraka_core' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/haraka_core.v:23]
+INFO: [Synth 8-6157] synthesizing module 'round_c' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/round_c.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'round_c' (0#1) [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/round_c.v:23]
+INFO: [Synth 8-6157] synthesizing module 'haraka_1round' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/haraka_1round.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'haraka_1round' (0#1) [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/haraka_1round.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'haraka_core' (0#1) [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/haraka_core.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mix256' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/haraka_core.v:52]
+INFO: [Synth 8-6155] done synthesizing module 'mix256' (0#1) [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/haraka_core.v:52]
+INFO: [Synth 8-6157] synthesizing module 'mix512' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/haraka_core.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'mix512' (0#1) [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/haraka_core.v:70]
+INFO: [Synth 8-6157] synthesizing module 'f_forward' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/haraka_core.v:97]
+INFO: [Synth 8-6155] done synthesizing module 'f_forward' (0#1) [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/haraka_core.v:97]
+INFO: [Synth 8-6157] synthesizing module 'f_forward_512' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/haraka_core.v:105]
+INFO: [Synth 8-6155] done synthesizing module 'f_forward_512' (0#1) [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/haraka_core.v:105]
+INFO: [Synth 8-6157] synthesizing module 'keccak_f' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/keccak_f.sv:83]
+INFO: [Synth 8-6155] done synthesizing module 'keccak_f' (0#1) [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/keccak_f.sv:83]
+INFO: [Synth 8-6155] done synthesizing module 'hashes' (0#1) [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/hashes.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'imm_generator' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:907]
+INFO: [Synth 8-6155] done synthesizing module 'imm_generator' (0#1) [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:907]
+INFO: [Synth 8-6157] synthesizing module 'branch_decision' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:801]
+INFO: [Synth 8-6155] done synthesizing module 'branch_decision' (0#1) [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:801]
+INFO: [Synth 8-6157] synthesizing module 'register_file' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/register_file.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'register_file' (0#1) [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/register_file.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'csr_file' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1481]
+INFO: [Synth 8-6155] done synthesizing module 'csr_file' (0#1) [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1481]
+INFO: [Synth 8-6157] synthesizing module 'load_unit' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1410]
+INFO: [Synth 8-6155] done synthesizing module 'load_unit' (0#1) [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1410]
+INFO: [Synth 8-6157] synthesizing module 'rv32i_alu' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:704]
+INFO: [Synth 8-6155] done synthesizing module 'rv32i_alu' (0#1) [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:704]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_steel_core' (0#1) [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:216]
+INFO: [Synth 8-6157] synthesizing module 'dual_port_ram' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/steel_soc.v:215]
+INFO: [Synth 8-3876] $readmem data file 'steel.mem' is read successfully [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/steel_soc.v:237]
+INFO: [Synth 8-6155] done synthesizing module 'dual_port_ram' (0#1) [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/steel_soc.v:215]
+INFO: [Synth 8-6155] done synthesizing module 'test_steel_soc' (0#1) [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/steel_sphincs_plus.srcs/sources_1/new/test_steel_soc.v:23]
+WARNING: [Synth 8-3848] Net Q[0] in module/entity register_file does not have driver. [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/register_file.sv:61]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1349.863 ; gain = 558.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1349.863 ; gain = 558.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1349.863 ; gain = 558.363
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.187 . Memory (MB): peak = 1349.863 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/software_steel_arty_a7_constraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'uart_tx'. [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/software_steel_arty_a7_constraints.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/software_steel_arty_a7_constraints.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'uart_rx'. [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/software_steel_arty_a7_constraints.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/software_steel_arty_a7_constraints.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/software_steel_arty_a7_constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/software_steel_arty_a7_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/test_steel_soc_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/test_steel_soc_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1460.211 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1460.211 ; gain = 0.000
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 1460.211 ; gain = 668.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s50csga324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 1460.211 ; gain = 668.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 1460.211 ; gain = 668.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6895] The reference checkpoint D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/steel_sphincs_plus.srcs/utils_1/imports/synth_1/steel_soc.dcp is not suitable for use with incremental synthesis for this design. Please regenerate the checkpoint for this design with -incremental_synth switch in the same Vivado session that synth_design has been run. Synthesis will continue with the default flow
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 1460.211 ; gain = 668.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 1460.211 ; gain = 668.711
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'csr_file'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+             STATE_RESET |                             0001 |                             0001
+         STATE_OPERATING |                             0010 |                             0010
+        STATE_TRAP_TAKEN |                             0100 |                             0100
+       STATE_TRAP_RETURN |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'csr_file'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 1460.211 ; gain = 668.711
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: no
+
+   Reason for not running incremental synthesis : 
+
+
+INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   64 Bit       Adders := 3     
+	   2 Input   32 Bit       Adders := 3     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
+	   3 Input    6 Bit       Adders := 3     
++---XORs : 
+	   2 Input    512 Bit         XORs := 1     
+	   2 Input    256 Bit         XORs := 1     
+	   5 Input     32 Bit         XORs := 10    
+	   2 Input     32 Bit         XORs := 109   
+	   3 Input     32 Bit         XORs := 2     
+	   2 Input      8 Bit         XORs := 158   
+	   4 Input      8 Bit         XORs := 60    
+	   5 Input      8 Bit         XORs := 4     
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	              256 Bit    Registers := 2     
+	               64 Bit    Registers := 3     
+	               32 Bit    Registers := 77    
+	               12 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 16    
++---RAMs : 
+	              12K Bit	(401 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input  512 Bit        Muxes := 1     
+	   2 Input  256 Bit        Muxes := 9     
+	  20 Input  128 Bit        Muxes := 4     
+	   2 Input   64 Bit        Muxes := 8     
+	   4 Input   32 Bit        Muxes := 15    
+	   2 Input   32 Bit        Muxes := 175   
+	  24 Input   32 Bit        Muxes := 2     
+	  18 Input   32 Bit        Muxes := 1     
+	   2 Input   31 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 1     
+	   3 Input   16 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 2     
+	   4 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 3     
+	  23 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 8     
+	   4 Input    4 Bit        Muxes := 2     
+	   9 Input    4 Bit        Muxes := 1     
+	   5 Input    4 Bit        Muxes := 2     
+	   7 Input    3 Bit        Muxes := 2     
+	   5 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 134   
+	   6 Input    1 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:31 ; elapsed = 00:01:59 . Memory (MB): peak = 1821.781 ; gain = 1030.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
++------------+------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping Report (see note below)
++---------------+--------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name    | RTL Object                     | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------+--------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|test_steel_soc | dual_port_ram_instance/ram_reg | 401 x 32(READ_FIRST)   | W | R | 401 x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
++---------------+--------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:35 ; elapsed = 00:02:03 . Memory (MB): peak = 1821.781 ; gain = 1030.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:36 ; elapsed = 00:02:05 . Memory (MB): peak = 1821.781 ; gain = 1030.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++---------------+--------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name    | RTL Object                     | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------+--------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|test_steel_soc | dual_port_ram_instance/ram_reg | 401 x 32(READ_FIRST)   | W | R | 401 x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
++---------------+--------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance dual_port_ram_instance/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dual_port_ram_instance/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:41 ; elapsed = 00:02:10 . Memory (MB): peak = 1821.781 ; gain = 1030.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:45 ; elapsed = 00:02:15 . Memory (MB): peak = 1821.781 ; gain = 1030.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:45 ; elapsed = 00:02:15 . Memory (MB): peak = 1821.781 ; gain = 1030.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:46 ; elapsed = 00:02:16 . Memory (MB): peak = 1821.781 ; gain = 1030.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:47 ; elapsed = 00:02:16 . Memory (MB): peak = 1821.781 ; gain = 1030.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:47 ; elapsed = 00:02:17 . Memory (MB): peak = 1821.781 ; gain = 1030.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:47 ; elapsed = 00:02:17 . Memory (MB): peak = 1821.781 ; gain = 1030.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     2|
+|2     |CARRY4   |    99|
+|3     |LUT1     |     2|
+|4     |LUT2     |   747|
+|5     |LUT3     |   743|
+|6     |LUT4     |   564|
+|7     |LUT5     |  1934|
+|8     |LUT6     |  7586|
+|9     |MUXF7    |  1608|
+|10    |MUXF8    |   672|
+|11    |RAMB36E1 |     1|
+|12    |FDRE     |  3078|
+|13    |FDSE     |     1|
+|14    |IBUF     |     2|
+|15    |OBUF     |    96|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:47 ; elapsed = 00:02:17 . Memory (MB): peak = 1821.781 ; gain = 1030.281
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:40 ; elapsed = 00:02:14 . Memory (MB): peak = 1821.781 ; gain = 919.934
+Synthesis Optimization Complete : Time (s): cpu = 00:01:47 ; elapsed = 00:02:17 . Memory (MB): peak = 1821.781 ; gain = 1030.281
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.253 . Memory (MB): peak = 1821.781 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2380 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1821.781 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 86a3ccc9
+INFO: [Common 17-83] Releasing license: Synthesis
+116 Infos, 4 Warnings, 3 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:51 ; elapsed = 00:02:25 . Memory (MB): peak = 1821.781 ; gain = 1402.574
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/steel_sphincs_plus.runs/synth_1/test_steel_soc.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file test_steel_soc_utilization_synth.rpt -pb test_steel_soc_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jul  5 18:32:07 2023...
+
+*** Running vivado
+    with args -log steel_soc.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source steel_soc.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source steel_soc.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/steel_sphincs_plus.srcs/utils_1/imports/synth_1/steel_soc.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/steel_sphincs_plus.srcs/utils_1/imports/synth_1/steel_soc.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top steel_soc -part xc7s50csga324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Device 21-403] Loading part xc7s50csga324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 22792
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+INFO: [Synth 8-11241] undeclared symbol 'misaligned_word', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:403]
+INFO: [Synth 8-11241] undeclared symbol 'misaligned_half', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:407]
+INFO: [Synth 8-11241] undeclared symbol 'misaligned', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:411]
+INFO: [Synth 8-11241] undeclared symbol 'branch_type', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1207]
+INFO: [Synth 8-11241] undeclared symbol 'jal_type', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1208]
+INFO: [Synth 8-11241] undeclared symbol 'jalr_type', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1209]
+INFO: [Synth 8-11241] undeclared symbol 'auipc_type', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1210]
+INFO: [Synth 8-11241] undeclared symbol 'lui_type', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1211]
+INFO: [Synth 8-11241] undeclared symbol 'load_type', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1212]
+INFO: [Synth 8-11241] undeclared symbol 'store_type', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1213]
+INFO: [Synth 8-11241] undeclared symbol 'system_type', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1214]
+INFO: [Synth 8-11241] undeclared symbol 'op_type', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1215]
+INFO: [Synth 8-11241] undeclared symbol 'op_imm_type', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1216]
+INFO: [Synth 8-11241] undeclared symbol 'misc_mem_type', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1217]
+INFO: [Synth 8-11241] undeclared symbol 'flw_type', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1219]
+INFO: [Synth 8-11241] undeclared symbol 'fsw_type', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1220]
+INFO: [Synth 8-11241] undeclared symbol 'keccak_type', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1221]
+INFO: [Synth 8-11241] undeclared symbol 'haraka_type', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1223]
+INFO: [Synth 8-11241] undeclared symbol 'addi', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1232]
+INFO: [Synth 8-11241] undeclared symbol 'slti', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1233]
+INFO: [Synth 8-11241] undeclared symbol 'sltiu', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1234]
+INFO: [Synth 8-11241] undeclared symbol 'andi', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1235]
+INFO: [Synth 8-11241] undeclared symbol 'ori', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1236]
+INFO: [Synth 8-11241] undeclared symbol 'xori', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1237]
+INFO: [Synth 8-11241] undeclared symbol 'slli', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1238]
+INFO: [Synth 8-11241] undeclared symbol 'srli', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1240]
+INFO: [Synth 8-11241] undeclared symbol 'srai', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1242]
+INFO: [Synth 8-11241] undeclared symbol 'add', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1244]
+INFO: [Synth 8-11241] undeclared symbol 'sub', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1246]
+INFO: [Synth 8-11241] undeclared symbol 'slt', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1248]
+INFO: [Synth 8-11241] undeclared symbol 'sltu', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1250]
+INFO: [Synth 8-11241] undeclared symbol 'is_and', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1252]
+INFO: [Synth 8-11241] undeclared symbol 'is_or', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1254]
+INFO: [Synth 8-11241] undeclared symbol 'is_xor', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1256]
+INFO: [Synth 8-11241] undeclared symbol 'sll', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1258]
+INFO: [Synth 8-11241] undeclared symbol 'srl', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1260]
+INFO: [Synth 8-11241] undeclared symbol 'sra', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1262]
+INFO: [Synth 8-11241] undeclared symbol 'csrxxx', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1264]
+INFO: [Synth 8-11241] undeclared symbol 'illegal_store', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1286]
+INFO: [Synth 8-11241] undeclared symbol 'illegal_load', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1290]
+INFO: [Synth 8-11241] undeclared symbol 'illegal_jalr', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1295]
+INFO: [Synth 8-11241] undeclared symbol 'illegal_branch', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1298]
+INFO: [Synth 8-11241] undeclared symbol 'illegal_op', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1302]
+INFO: [Synth 8-11241] undeclared symbol 'illegal_op_imm', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1305]
+INFO: [Synth 8-11241] undeclared symbol 'illegal_system', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1308]
+INFO: [Synth 8-11241] undeclared symbol 'unknown_type', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1311]
+INFO: [Synth 8-11241] undeclared symbol 'interrupt_pending', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1567]
+INFO: [Synth 8-11241] undeclared symbol 'exception_pending', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1572]
+INFO: [Synth 8-11241] undeclared symbol 'base_address_offset', assumed default net type 'wire' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1930]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1200.488 ; gain = 408.230
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'steel_soc' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/steel_soc.v:23]
+INFO: [Synth 8-6157] synthesizing module 'riscv_steel_core' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:216]
+INFO: [Synth 8-6157] synthesizing module 'data_fetch_store_unit' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1004]
+INFO: [Synth 8-6155] done synthesizing module 'data_fetch_store_unit' (0#1) [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1004]
+INFO: [Synth 8-6157] synthesizing module 'decoder' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1160]
+INFO: [Synth 8-6155] done synthesizing module 'decoder' (0#1) [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1160]
+INFO: [Synth 8-6157] synthesizing module 'hashes' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/hashes.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'sub_bytes' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/sub_bytes.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'sub_bytes' (0#1) [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/sub_bytes.v:58]
+INFO: [Synth 8-6157] synthesizing module 'haraka_core' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/haraka_core.v:23]
+INFO: [Synth 8-6157] synthesizing module 'round_c' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/round_c.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'round_c' (0#1) [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/round_c.v:23]
+INFO: [Synth 8-6157] synthesizing module 'haraka_1round' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/haraka_1round.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'haraka_1round' (0#1) [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/haraka_1round.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'haraka_core' (0#1) [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/haraka_core.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mix256' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/haraka_core.v:52]
+INFO: [Synth 8-6155] done synthesizing module 'mix256' (0#1) [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/haraka_core.v:52]
+INFO: [Synth 8-6157] synthesizing module 'mix512' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/haraka_core.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'mix512' (0#1) [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/haraka_core.v:70]
+INFO: [Synth 8-6157] synthesizing module 'f_forward' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/haraka_core.v:97]
+INFO: [Synth 8-6155] done synthesizing module 'f_forward' (0#1) [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/haraka_core.v:97]
+INFO: [Synth 8-6157] synthesizing module 'f_forward_512' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/haraka_core.v:105]
+INFO: [Synth 8-6155] done synthesizing module 'f_forward_512' (0#1) [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/haraka_core.v:105]
+INFO: [Synth 8-6157] synthesizing module 'keccak_f' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/keccak_f.sv:83]
+INFO: [Synth 8-6155] done synthesizing module 'keccak_f' (0#1) [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/keccak_f.sv:83]
+INFO: [Synth 8-6155] done synthesizing module 'hashes' (0#1) [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/hashes.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'imm_generator' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:907]
+INFO: [Synth 8-6155] done synthesizing module 'imm_generator' (0#1) [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:907]
+INFO: [Synth 8-6157] synthesizing module 'branch_decision' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:801]
+INFO: [Synth 8-6155] done synthesizing module 'branch_decision' (0#1) [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:801]
+INFO: [Synth 8-6157] synthesizing module 'register_file' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/register_file.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'register_file' (0#1) [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/register_file.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'csr_file' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1481]
+INFO: [Synth 8-6155] done synthesizing module 'csr_file' (0#1) [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1481]
+INFO: [Synth 8-6157] synthesizing module 'load_unit' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1410]
+INFO: [Synth 8-6155] done synthesizing module 'load_unit' (0#1) [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:1410]
+INFO: [Synth 8-6157] synthesizing module 'rv32i_alu' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:704]
+INFO: [Synth 8-6155] done synthesizing module 'rv32i_alu' (0#1) [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:704]
+INFO: [Synth 8-6155] done synthesizing module 'riscv_steel_core' (0#1) [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/riscv_steel_core.v:216]
+INFO: [Synth 8-6157] synthesizing module 'memory_mapper' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/steel_soc.v:146]
+INFO: [Synth 8-6155] done synthesizing module 'memory_mapper' (0#1) [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/steel_soc.v:146]
+INFO: [Synth 8-6157] synthesizing module 'dual_port_ram' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/steel_soc.v:215]
+INFO: [Synth 8-3876] $readmem data file 'steel.mem' is read successfully [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/steel_soc.v:237]
+INFO: [Synth 8-6155] done synthesizing module 'dual_port_ram' (0#1) [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/steel_soc.v:215]
+INFO: [Synth 8-6157] synthesizing module 'uart' [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/steel_soc.v:267]
+INFO: [Synth 8-6155] done synthesizing module 'uart' (0#1) [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/steel_soc.v:267]
+INFO: [Synth 8-6155] done synthesizing module 'steel_soc' (0#1) [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/steel_soc.v:23]
+WARNING: [Synth 8-3848] Net Q[0] in module/entity register_file does not have driver. [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/register_file.sv:61]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1352.801 ; gain = 560.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1352.801 ; gain = 560.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1352.801 ; gain = 560.543
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.198 . Memory (MB): peak = 1352.801 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/software_steel_arty_a7_constraints.xdc]
+Finished Parsing XDC File [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/software_steel_arty_a7_constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/files/software_steel_arty_a7_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/steel_soc_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/steel_soc_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1461.988 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1461.988 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1461.988 ; gain = 669.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s50csga324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1461.988 ; gain = 669.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1461.988 ; gain = 669.730
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'csr_file'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+             STATE_RESET |                             0001 |                             0001
+         STATE_OPERATING |                             0010 |                             0010
+        STATE_TRAP_TAKEN |                             0100 |                             0100
+       STATE_TRAP_RETURN |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'current_state_reg' in module 'csr_file'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1461.988 ; gain = 669.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   64 Bit       Adders := 3     
+	   2 Input   32 Bit       Adders := 3     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
+	   3 Input    6 Bit       Adders := 3     
+	   2 Input    4 Bit       Adders := 2     
++---XORs : 
+	   2 Input    512 Bit         XORs := 1     
+	   2 Input    256 Bit         XORs := 1     
+	   5 Input     32 Bit         XORs := 10    
+	   2 Input     32 Bit         XORs := 109   
+	   3 Input     32 Bit         XORs := 2     
+	   2 Input      8 Bit         XORs := 158   
+	   4 Input      8 Bit         XORs := 60    
+	   5 Input      8 Bit         XORs := 4     
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	              256 Bit    Registers := 2     
+	               64 Bit    Registers := 3     
+	               32 Bit    Registers := 79    
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 18    
++---RAMs : 
+	              12K Bit	(401 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input  512 Bit        Muxes := 1     
+	   2 Input  256 Bit        Muxes := 9     
+	  20 Input  128 Bit        Muxes := 4     
+	   2 Input   64 Bit        Muxes := 8     
+	   4 Input   32 Bit        Muxes := 16    
+	   2 Input   32 Bit        Muxes := 180   
+	  24 Input   32 Bit        Muxes := 2     
+	  18 Input   32 Bit        Muxes := 1     
+	   2 Input   31 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 1     
+	   3 Input   16 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 2     
+	   2 Input   10 Bit        Muxes := 2     
+	   4 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 2     
+	   2 Input    6 Bit        Muxes := 3     
+	  23 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 16    
+	   4 Input    4 Bit        Muxes := 3     
+	   9 Input    4 Bit        Muxes := 1     
+	   5 Input    4 Bit        Muxes := 3     
+	   3 Input    4 Bit        Muxes := 1     
+	   7 Input    3 Bit        Muxes := 2     
+	   3 Input    3 Bit        Muxes := 1     
+	   5 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 147   
+	   6 Input    1 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:40 ; elapsed = 00:01:59 . Memory (MB): peak = 1822.750 ; gain = 1030.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
+|sub_bytes   | sbox       | 256x8         | LUT            | 
++------------+------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------+--------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object                     | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+--------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|steel_soc   | dual_port_ram_instance/ram_reg | 401 x 32(READ_FIRST)   | W | R | 401 x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
++------------+--------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:44 ; elapsed = 00:02:03 . Memory (MB): peak = 1822.750 ; gain = 1030.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:46 ; elapsed = 00:02:05 . Memory (MB): peak = 1822.750 ; gain = 1030.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------+--------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object                     | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+--------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|steel_soc   | dual_port_ram_instance/ram_reg | 401 x 32(READ_FIRST)   | W | R | 401 x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
++------------+--------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance dual_port_ram_instance/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance dual_port_ram_instance/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:50 ; elapsed = 00:02:10 . Memory (MB): peak = 1822.750 ; gain = 1030.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:53 ; elapsed = 00:02:15 . Memory (MB): peak = 1822.750 ; gain = 1030.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:53 ; elapsed = 00:02:15 . Memory (MB): peak = 1822.750 ; gain = 1030.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:54 ; elapsed = 00:02:16 . Memory (MB): peak = 1822.750 ; gain = 1030.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:54 ; elapsed = 00:02:17 . Memory (MB): peak = 1822.750 ; gain = 1030.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:55 ; elapsed = 00:02:17 . Memory (MB): peak = 1822.750 ; gain = 1030.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:55 ; elapsed = 00:02:17 . Memory (MB): peak = 1822.750 ; gain = 1030.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     2|
+|2     |CARRY4   |   107|
+|3     |LUT1     |     6|
+|4     |LUT2     |   776|
+|5     |LUT3     |   828|
+|6     |LUT4     |   450|
+|7     |LUT5     |  1982|
+|8     |LUT6     |  7369|
+|9     |MUXF7    |  1750|
+|10    |MUXF8    |   760|
+|11    |RAMB36E1 |     1|
+|12    |FDRE     |  3153|
+|13    |FDSE     |    12|
+|14    |IBUF     |     3|
+|15    |OBUF     |     1|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:55 ; elapsed = 00:02:17 . Memory (MB): peak = 1822.750 ; gain = 1030.492
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:45 ; elapsed = 00:02:14 . Memory (MB): peak = 1822.750 ; gain = 921.305
+Synthesis Optimization Complete : Time (s): cpu = 00:01:55 ; elapsed = 00:02:18 . Memory (MB): peak = 1822.750 ; gain = 1030.492
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.264 . Memory (MB): peak = 1822.750 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2618 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1822.750 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: b73244dc
+INFO: [Common 17-83] Releasing license: Synthesis
+123 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:59 ; elapsed = 00:02:24 . Memory (MB): peak = 1822.750 ; gain = 1403.898
+INFO: [Common 17-1381] The checkpoint 'D:/Users/Jonathan/Documents/sphincsplus-steel/RTL/Vivado/steel_sphincs_plus/steel_sphincs_plus.runs/synth_1/steel_soc.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file steel_soc_utilization_synth.rpt -pb steel_soc_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jul  5 18:38:30 2023...

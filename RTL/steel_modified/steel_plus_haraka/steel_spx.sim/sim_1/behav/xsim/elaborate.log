@@ -1,0 +1,33 @@
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_spx_behav xil_defaultlib.tb_spx xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.data_fetch_store_unit
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.sub_bytes
+Compiling module xil_defaultlib.haraka_core
+Compiling module xil_defaultlib.mix256
+Compiling module xil_defaultlib.mix512
+Compiling module xil_defaultlib.f_forward
+Compiling module xil_defaultlib.f_forward_512
+Compiling module xil_defaultlib.module_haraka
+Compiling module xil_defaultlib.keccak_f1600
+Compiling module xil_defaultlib.hashes
+Compiling module xil_defaultlib.imm_generator
+Compiling module xil_defaultlib.branch_decision
+Compiling module xil_defaultlib.register_file
+Compiling module xil_defaultlib.csr_file
+Compiling module xil_defaultlib.load_unit
+Compiling module xil_defaultlib.rv32i_alu
+Compiling module xil_defaultlib.riscv_steel_core
+Compiling module xil_defaultlib.dual_port_ram
+Compiling module xil_defaultlib.test_spx
+Compiling module xil_defaultlib.tb_spx
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_spx_behav

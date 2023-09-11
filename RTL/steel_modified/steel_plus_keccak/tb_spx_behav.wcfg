@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_spx_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_spx" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="632.501 ns"></ZoomEndTime>
+      <Cursor1Time time="210.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="276"></NameColumnWidth>
+      <ValueColumnWidth column_width="60"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="42" />
+   <wvobject fp_name="/tb_spx/clock" type="logic">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spx/dut/clk50mhz" type="logic">
+      <obj_property name="ElementShortName">clk50mhz</obj_property>
+      <obj_property name="ObjectShortName">clk50mhz</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spx/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spx/instruction_in" type="array">
+      <obj_property name="ElementShortName">instruction_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction_in[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spx/instruction_address" type="array">
+      <obj_property name="ElementShortName">instruction_address[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction_address[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spx/bus_data_rdata" type="array">
+      <obj_property name="ElementShortName">bus_data_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">bus_data_rdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spx/j" type="array">
+      <obj_property name="ElementShortName">j[31:0]</obj_property>
+      <obj_property name="ObjectShortName">j[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spx/dut/riscv_steel_core_instance/register_file_instance/Q" type="array">
+      <obj_property name="ElementShortName">Q[31:1][31:0]</obj_property>
+      <obj_property name="ObjectShortName">Q[31:1][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spx/dut/riscv_steel_core_instance/register_file_instance/Q_fp" type="array">
+      <obj_property name="ElementShortName">Q_fp[31:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">Q_fp[31:0][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spx/dut/riscv_steel_core_instance/decoder_instance/instruction_rs1_address" type="array">
+      <obj_property name="ElementShortName">instruction_rs1_address[4:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction_rs1_address[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spx/dut/riscv_steel_core_instance/decoder_instance/instruction_rs2_address" type="array">
+      <obj_property name="ElementShortName">instruction_rs2_address[4:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction_rs2_address[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spx/dut/riscv_steel_core_instance/decoder_instance/instruction_rd_address" type="array">
+      <obj_property name="ElementShortName">instruction_rd_address[4:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction_rd_address[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spx/dut/riscv_steel_core_instance/decoder_instance/fpu_file_write_enable" type="logic">
+      <obj_property name="ElementShortName">fpu_file_write_enable</obj_property>
+      <obj_property name="ObjectShortName">fpu_file_write_enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spx/dut/riscv_steel_core_instance/decoder_instance/store_fpu" type="logic">
+      <obj_property name="ElementShortName">store_fpu</obj_property>
+      <obj_property name="ObjectShortName">store_fpu</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spx/dut/riscv_steel_core_instance/register_file_instance/FPU" type="logic">
+      <obj_property name="ElementShortName">FPU</obj_property>
+      <obj_property name="ObjectShortName">FPU</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spx/dut/riscv_steel_core_instance/register_file_instance/store_fpu" type="logic">
+      <obj_property name="ElementShortName">store_fpu</obj_property>
+      <obj_property name="ObjectShortName">store_fpu</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spx/dut/riscv_steel_core_instance/register_file_instance/write_enable" type="logic">
+      <obj_property name="ElementShortName">write_enable</obj_property>
+      <obj_property name="ObjectShortName">write_enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spx/dut/riscv_steel_core_instance/decoder_instance/flw_type" type="logic">
+      <obj_property name="ElementShortName">flw_type</obj_property>
+      <obj_property name="ObjectShortName">flw_type</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spx/dut/riscv_steel_core_instance/decoder_instance/load_type" type="logic">
+      <obj_property name="ElementShortName">load_type</obj_property>
+      <obj_property name="ObjectShortName">load_type</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spx/dut/riscv_steel_core_instance/decoder_instance/nop_type" type="logic">
+      <obj_property name="ElementShortName">nop_type</obj_property>
+      <obj_property name="ObjectShortName">nop_type</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spx/dut/riscv_steel_core_instance/register_file_instance/rs1_data" type="array">
+      <obj_property name="ElementShortName">rs1_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rs1_data[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spx/dut/riscv_steel_core_instance/register_file_instance/rs2_data" type="array">
+      <obj_property name="ElementShortName">rs2_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rs2_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spx/dut/riscv_steel_core_instance/data_fetch_store_unit_instance/write_request" type="logic">
+      <obj_property name="ElementShortName">write_request</obj_property>
+      <obj_property name="ObjectShortName">write_request</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spx/dut/riscv_steel_core_instance/data_fetch_store_unit_instance/store_data" type="array">
+      <obj_property name="ElementShortName">store_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">store_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spx/dut/riscv_steel_core_instance/data_fetch_store_unit_instance/instruction_funct3" type="array">
+      <obj_property name="ElementShortName">instruction_funct3[2:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction_funct3[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spx/dut/riscv_steel_core_instance/data_fetch_store_unit_instance/load_store_address" type="array">
+      <obj_property name="ElementShortName">load_store_address[31:0]</obj_property>
+      <obj_property name="ObjectShortName">load_store_address[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spx/dut/riscv_steel_core_instance/data_fetch_store_unit_instance/rs2_data" type="array">
+      <obj_property name="ElementShortName">rs2_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rs2_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spx/dut/riscv_steel_core_instance/data_fetch_store_unit_instance/misaligned_store" type="logic">
+      <obj_property name="ElementShortName">misaligned_store</obj_property>
+      <obj_property name="ObjectShortName">misaligned_store</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spx/dut/riscv_steel_core_instance/data_fetch_store_unit_instance/take_trap" type="logic">
+      <obj_property name="ElementShortName">take_trap</obj_property>
+      <obj_property name="ObjectShortName">take_trap</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spx/dut/riscv_steel_core_instance/data_fetch_store_unit_instance/write_mask" type="array">
+      <obj_property name="ElementShortName">write_mask[3:0]</obj_property>
+      <obj_property name="ObjectShortName">write_mask[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spx/dut/dual_port_ram_instance/ram" type="array">
+      <obj_property name="ElementShortName">ram[0:16368][31:0]</obj_property>
+      <obj_property name="ObjectShortName">ram[0:16368][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spx/dut/riscv_steel_core_instance/csr_file_instance/exception_pending" type="logic">
+      <obj_property name="ElementShortName">exception_pending</obj_property>
+      <obj_property name="ObjectShortName">exception_pending</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spx/dut/riscv_steel_core_instance/csr_file_instance/illegal_instruction" type="logic">
+      <obj_property name="ElementShortName">illegal_instruction</obj_property>
+      <obj_property name="ObjectShortName">illegal_instruction</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spx/dut/riscv_steel_core_instance/csr_file_instance/misaligned_load" type="logic">
+      <obj_property name="ElementShortName">misaligned_load</obj_property>
+      <obj_property name="ObjectShortName">misaligned_load</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spx/dut/riscv_steel_core_instance/csr_file_instance/misaligned_store" type="logic">
+      <obj_property name="ElementShortName">misaligned_store</obj_property>
+      <obj_property name="ObjectShortName">misaligned_store</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spx/dut/riscv_steel_core_instance/csr_file_instance/misaligned_instruction_address" type="logic">
+      <obj_property name="ElementShortName">misaligned_instruction_address</obj_property>
+      <obj_property name="ObjectShortName">misaligned_instruction_address</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spx/dut/riscv_steel_core_instance/load" type="logic">
+      <obj_property name="ElementShortName">load</obj_property>
+      <obj_property name="ObjectShortName">load</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spx/dut/riscv_steel_core_instance/misaligned" type="logic">
+      <obj_property name="ElementShortName">misaligned</obj_property>
+      <obj_property name="ObjectShortName">misaligned</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spx/dut/riscv_steel_core_instance/misaligned_word" type="logic">
+      <obj_property name="ElementShortName">misaligned_word</obj_property>
+      <obj_property name="ObjectShortName">misaligned_word</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spx/dut/riscv_steel_core_instance/misaligned_half" type="logic">
+      <obj_property name="ElementShortName">misaligned_half</obj_property>
+      <obj_property name="ObjectShortName">misaligned_half</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spx/dut/riscv_steel_core_instance/instruction_funct3" type="array">
+      <obj_property name="ElementShortName">instruction_funct3[2:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction_funct3[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_spx/dut/riscv_steel_core_instance/target_address_adder" type="array">
+      <obj_property name="ElementShortName">target_address_adder[31:0]</obj_property>
+      <obj_property name="ObjectShortName">target_address_adder[31:0]</obj_property>
+   </wvobject>
+</wave_config>
